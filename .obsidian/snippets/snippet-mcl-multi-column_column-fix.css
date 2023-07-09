@@ -1,0 +1,4 @@
+.callout[data-callout="multi-column"] > .callout-content > blockquote {
+	border-left: none;
+	flex-grow: 1;
+}

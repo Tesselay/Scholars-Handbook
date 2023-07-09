@@ -1,0 +1,77 @@
+/* Daily note callouts */
+.callout[data-callout="datalog"] {
+	--callout-color: 106, 135, 149;
+	--callout-icon: none;
+	border: 1px solid rgba(255, 255, 255, 0.09);
+	border-radius: 10px;
+	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+}
+.callout[data-callout="morning"] {
+	--callout-color: 240, 205, 0;
+	--callout-icon: none;
+	border: 1px solid rgba(255, 255, 255, 0.09);
+	border-radius: 10px;
+	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+}
+.callout[data-callout="evening"] {
+	--callout-color: 57, 32, 51;
+	--callout-icon: none;
+	border: 1px solid rgba(255, 255, 255, 0.09);
+	border-radius: 10px;
+	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+}
+.callout[data-callout="journal"] {
+	--callout-color: 0, 0, 0;
+	--callout-icon: none;
+	border: 1px solid rgba(255, 255, 255, 0.09);
+	border-radius: 10px;
+	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+}
+.callout[data-callout="transparent"] {
+	--callout-color: 255, 255, 255;
+	--callout-icon: none;
+	border: 1px solid rgba(255, 255, 255, 0.09);
+	border-radius: 10px;
+	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+	
+	.callout-title {
+		display: none;
+	}
+}
+.callout[data-callout="button"] {
+	--callout-icon: none;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+	background-color: transparent;
+
+	.callout-content {	
+		background-color: transparent;
+
+		.internal-link {
+			text-decoration: none !important;
+			color: rgba(229, 229, 229, 1);
+		}
+		.internal-link:hover {
+			color: rgba(167, 139, 250, 1);
+		}
+
+	}
+
+
+	.callout-content > p {
+		font-size: 0.9rem;
+		margin: 0.2rem 0;
+		color: rgba(255, 255, 255, 0.50);
+		width: auto;
+	}
+
+	.callout-content > p > strong > a {
+		font-size: 1.1rem;
+	}
+
+	.callout-title {
+		display: none;
+	}	
+}
+

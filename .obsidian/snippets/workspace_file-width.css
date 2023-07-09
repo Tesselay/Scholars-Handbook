@@ -1,0 +1,21 @@
+/*Line width and height customization
+*/
+/*default*/
+body {
+--file-line-width: 700px ; /* change width to your wishes */
+}
+
+/* cssclass: line1 */
+body .line1{
+--file-line-width: 1000px ; /* change width to your wishes */
+}
+
+/* cssclass: line2 */
+body .line2{
+--file-line-width: 1500px ; /* change width to your wishes */
+}
+
+/* cssclass: line3 */
+body .line3{
+--file-line-width: 100vw ; /* change width to your wishes */
+}
