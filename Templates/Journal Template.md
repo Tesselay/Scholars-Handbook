@@ -35,10 +35,12 @@ flexGrow=1
 
 ## Morning Log
 > [!morning] #### 🌅 Morning Log
+> 0:00
 > Text
 
 ## Evening Log
 > [!evening] #### 🌇 Evening Log
+> 0:00
 > Text
 
 ## Things I learned today
