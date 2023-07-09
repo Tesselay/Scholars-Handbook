@@ -11,7 +11,8 @@ date: <% tp.file.title %>
 >
 >**Parent:: **[[<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-MM-DD") %>]], [[<% tp.date.now("YYYY-[W]ww", 0, tp.file.title, "YYYY-MM-DD") %>]]
 >
->---
+>**Journal:: **[[Journal/Entries/<% tp.file.title %> Journal|<% tp.file.title %> Journal]]
+---
 >- [google calendar link](https://calendar.google.com)
 >- [tracking app]()
 
