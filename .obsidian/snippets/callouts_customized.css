@@ -38,6 +38,13 @@
 		display: none;
 	}
 }
+.callout[data-callout="log"] {
+	--callout-color: 255, 255, 255;
+	--callout-icon: none;
+	border: 1px solid rgba(255, 255, 255, 0.09);
+	border-radius: 10px;
+	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+}
 .callout[data-callout="button"] {
 	--callout-icon: none;
 	border: 1px solid rgba(255, 255, 255, 0.2);
