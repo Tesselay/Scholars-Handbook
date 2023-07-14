@@ -1,6 +1,6 @@
 ---
 type: daily
-date: date(today)
+date: <% tp.file.title.split(" ")[0] %>
 banner: "![[5centimeterspersecond.png]]"
 banner_y: 0.172
 ---
