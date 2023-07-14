@@ -47,7 +47,7 @@ flexGrow=1
 - log-learned-today:: 
 
 ## Logs
-> [!transparent]
+> [!log]+ 
 > #tag 
 >
 > Text
