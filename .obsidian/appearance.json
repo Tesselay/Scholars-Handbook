@@ -1,0 +1,32 @@
+{
+  "accentColor": "",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "callout-header_paddingfix",
+    "callout-paddingfix",
+    "old_callouts",
+    "single-file-fullwidth",
+    "file-width",
+    "plugin_obsidian-columns_padding-disable",
+    "neumorphic_button",
+    "plugin_buttons-content-center-fix",
+    "plugin-buttons_content-center-fix",
+    "plugin-buttons_neumorphic-button",
+    "workspace_file-width",
+    "test",
+    "workspace_heading-size",
+    "plugin-mcm_column-block-margin-fix",
+    "MCL Multi Column",
+    "snippet-mcl-multi-column_column-fix",
+    "clean-embeds",
+    "callouts_glow-disable",
+    "theme-its_theme-infobox_customized",
+    "callouts_old",
+    "callouts_customized",
+    "embed_clean-embed"
+  ],
+  "cssTheme": "AnuPpuccin",
+  "baseFontSize": 16,
+  "nativeMenus": false,
+  "translucency": false
+}

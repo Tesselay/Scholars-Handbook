@@ -1,0 +1,9 @@
+{
+  "showInlineTitle": false,
+  "livePreview": false,
+  "attachmentFolderPath": "Assets",
+  "readableLineLength": true,
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "preview",
+  "showFrontmatter": false
+}

@@ -1,4 +1,6 @@
-.obsidian
+.obsidian/*
+!.obsidian/appearance.json
+!.obsidian/app.json
 00 Journal/Daily/*
 00 Journal/Entries/*
 22 Unordered
