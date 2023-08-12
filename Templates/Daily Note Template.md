@@ -96,8 +96,7 @@ Shadow: off
 
 > [!evening] #### Evening Data
 > - log-day-rating:: 0
-> - log-song-of-the-day:: 
-> - log-musician-to-remember:: 
+> - log-word-of-the-day:: 
 
 --- end-multi-column
 
