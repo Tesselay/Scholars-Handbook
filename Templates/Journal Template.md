@@ -13,7 +13,7 @@ flexGrow=1
 > [!button]
 > Previous Journal 
 > 
-> **[[Journal/Entries/<% tp.date.now("YYYY-MM-DD", -1) + " Journal" %>|<% tp.date.now("YYYY-MM-DD", -1) + " Journal" %>]]** 
+> **[[<% tp.date.now("YYYY-MM-DD", -1) + " Journal" %>]]** 
 ```
 ```col-md
 flexGrow=1
@@ -21,7 +21,7 @@ flexGrow=1
 > [!button]
 > Next Journal 
 > 
-> **[[Journal/Entries/<% tp.date.now("YYYY-MM-DD", +1) + " Journal" %>|<% tp.date.now("YYYY-MM-DD", +1) + " Journal" %>]]**
+> **[[00 Journal/Entries/<% tp.date.now("YYYY-MM-DD", +1) + " Journal" %>|<% tp.date.now("YYYY-MM-DD", +1) + " Journal" %>]]**
 ```
 ```col-md
 flexGrow=1
@@ -29,18 +29,18 @@ flexGrow=1
 > [!button]
 > Day's Note 
 > 
-> **[[Journal/Daily/<% tp.date.now("YYYY-MM-DD") %>|<% tp.date.now("YYYY-MM-DD") %>]]** 
+> **[[<% tp.date.now("YYYY-MM-DD") %>]]** 
 ```
 ````
 
 ## Morning Log
 > [!morning] #### 🌅 Morning Log
-> 0:00
+> 00:00
 > Text
 
 ## Evening Log
 > [!evening] #### 🌇 Evening Log
-> 0:00
+> 00:00
 > Text
 
 ## Things I learned today
