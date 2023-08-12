@@ -1,3 +1,6 @@
+	Will never be used, to keep an idea on data tracking.
+
+
 ---
 type: daily
 date: <% tp.file.title %>
@@ -100,6 +103,53 @@ Shadow: off
 > - log-musician-to-remember:: 
 
 --- end-multi-column
+
+## Daily Data
+
+````col
+```col-md
+flexGrow=1
+===
+
+> [! datalog] #### 💤 Sleep
+> - log-sleep-time:: 0:00
+> - log-wake-up-time:: 0:00
+> - log-time-slept:: 0:00
+
+> [! datalog] #### 🏃‍♀️ Exercise
+> - log-cycling:: 0 km
+> - log-push-up:: 0 
+
+```
+```col-md
+flexGrow=1
+===
+> [! datalog] #### ☕ Consumables
+> - log-soda:: 0 l
+> - log-water:: 0 l
+> - log-food:: {string}
+> - log-healthy-eating:: {number 1-5}
+
+> [! datalog] #### ♻ Habit 
+> - log-minibrush:: No
+> - log-meditation:: No
+> - log-breakfast:: No
+> - log-walk:: No
+```
+```col-md
+flexGrow=1
+===
+> [!datalog] #### ⌚ Time Tracking
+> - log-creative:: 0:00
+> - log-gaming:: 0:00
+> - log-learning:: 0:00
+> - log-working:: 0:00
+> - log-productivity:: 0:00
+> - log-socializing:: 0:00
+> - log-relationship:: 0:00
+> - log-cat-playtime:: 0:00
+```
+````
 
 ## Daily Meta
 
