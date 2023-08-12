@@ -6,7 +6,3 @@
 	border-left: none;
 	padding: 0;
 }
-
-.clean-embed .markdown-embed-content > .markdown-preview-view > .markdown-preview-section > div > .callout > .callout-content > p {
-	margin-block-start: 1em;
-}
