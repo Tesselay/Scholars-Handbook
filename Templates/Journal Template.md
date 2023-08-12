@@ -43,7 +43,11 @@ flexGrow=1
 > 00:00
 > Text
 
-## Things I learned today
+## Learning
+### Terminology / Words
+- log-learned-term::
+
+### Generic
 - log-learned-today:: 
 
 ## Logs
