@@ -52,17 +52,10 @@ Shadow: off
 
 ## Daily Overview
 
-> [!multi-column|center-fixed]
-> 
->> ```todoist
->> name: My Tasks 
->>filter: "<% tp.file.title %> | overdue" 
->>``` 
->
->> #### Done Tasks
->> %% TCT_TEMPLATED_START <% tp.file.title + " 00:00" %> %%
->> 
->> %% TCT_TEMPLATED_END <% tp.file.title + " 23:59" %> %%
+> ```todoist
+> name: My Tasks 
+> filter: "<% tp.file.title %> | overdue" 
+> ``` 
 
 ```start-multi-column
 ID: ID_uyed
