@@ -2,7 +2,7 @@
 type: daily
 date: <% tp.file.title %>
 banner: "![[scottishhighlands.jpg]]"
-cssclass: line3, clean-embed
+cssclass: line3, clean-embed, oc-padding-0
 banner_y: 0.5
 ---
 # <% tp.file.title %>
