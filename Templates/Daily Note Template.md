@@ -74,22 +74,18 @@ Shadow: off
 --- end-multi-column
 
 ```start-multi-column
-ID: ID_rqi3
+ID: ID_yeet
 Number of Columns: 2
 Largest Column: standard
-border: off
+Border: off
 Shadow: off
 ```
 
-> [!morning] #### Morning Data
-> - log-sleep-rating:: 0
-> - log-nightmares:: no
+![[<% tp.file.title %> Journal#Morning Data]]
 
 --- column-end ---
 
-> [!evening] #### Evening Data
-> - log-day-rating:: 0
-> - log-word-of-the-day:: 
+![[<% tp.file.title %> Journal#Evening Data]]
 
 --- end-multi-column
 

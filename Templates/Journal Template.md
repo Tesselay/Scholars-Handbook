@@ -38,10 +38,23 @@ flexGrow=1
 > 00:00
 > Text
 
+## Morning Data
+
+> [!morning] #### Morning Data
+> - log-sleep-rating:: 0
+> - log-nightmares:: no
+
 ## Evening Log
 > [!evening] #### 🌇 Evening Log
 > 00:00
 > Text
+
+## Evening Data
+
+> [!evening] #### Evening Data
+> - log-day-rating:: 0
+> - log-word-of-the-day:: 
+> - log-song-of-the-day::
 
 ## Learning
 ### Terminology / Words
