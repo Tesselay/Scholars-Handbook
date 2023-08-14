@@ -13,7 +13,7 @@ flexGrow=1
 > [!button]
 > Previous Journal 
 > 
-> **[[<% tp.date.now("YYYY-MM-DD", -1) + " Journal" %>]]** 
+> **[[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]** 
 ```
 ```col-md
 flexGrow=1
@@ -21,7 +21,7 @@ flexGrow=1
 > [!button]
 > Next Journal 
 > 
-> **[[00 Journal/Entries/<% tp.date.now("YYYY-MM-DD", +1) + " Journal" %>|<% tp.date.now("YYYY-MM-DD", +1) + " Journal" %>]]**
+> **[[00 Journal/Entries/<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>|<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]**
 ```
 ```col-md
 flexGrow=1
@@ -29,7 +29,7 @@ flexGrow=1
 > [!button]
 > Day's Note 
 > 
-> **[[<% tp.date.now("YYYY-MM-DD") %>]]** 
+> **[[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]** 
 ```
 ````
 
