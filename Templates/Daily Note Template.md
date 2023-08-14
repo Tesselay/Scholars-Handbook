@@ -7,48 +7,48 @@ banner_y: 0.5
 ---
 # <% tp.file.title %>
 
-```start-multi-column
-ID: ID_eh0v
-Number of Columns: 5
-Largest Column: standard
-Border: off
-Shadow: off
-```
-
+````col
+```col-md
+flexGrow=1
+===
 > [!button]
 > Previous Day 
 > 
 > **[[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") %>]]**
-
---- column-end ---
-
+```
+```col-md
+flexGrow=1
+===
 > [!button]
 > Next Day 
 > 
 > **[[<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") %>]]**
-
---- column-end ---
-
+```
+```col-md
+flexGrow=1
+===
 > [!button]
 > Week
 > 
 > **[[<% tp.date.now("YYYY-[W]ww", 0, tp.file.title, "YYYY-MM-DD") %>]]**
-
---- column-end ---
-
+```
+```col-md
+flexGrow=1
+===
 > [!button]
 > Month 
 > 
 > **[[<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-MM-DD") %>]]**
-
---- column-end ---
-
+```
+```col-md
+flexGrow=1
+===
 > [!button]
 > Journal
 > 
 > **[[00 Journal/Entries/<% tp.file.title %> Journal|<% tp.file.title %> Journal]]**
-
---- end-multi-column
+```
+````
 
 ## Daily Overview
 
@@ -57,37 +57,31 @@ Shadow: off
 > filter: "<% tp.file.title %> | overdue" 
 > ``` 
 
-```start-multi-column
-ID: ID_uyed
-Number of Columns: 2
-Largest Column: standard
-Border: off
-Shadow: off
-```
-
+````col
+```col-md
+flexGrow=1
+===
 ![[<% tp.file.title %> Journal#Morning Log]]
-
---- column-end ---
-
-![[<% tp.file.title %> Journal#Evening Log]]
-
---- end-multi-column
-
-```start-multi-column
-ID: ID_yeet
-Number of Columns: 2
-Largest Column: standard
-Border: off
-Shadow: off
 ```
+```col-md
+flexGrow=1
+===
+![[<% tp.file.title %> Journal#Evening Log]]
+```
+````
 
+````col
+```col-md
+flexGrow=1
+===
 ![[<% tp.file.title %> Journal#Morning Data]]
-
---- column-end ---
-
+```
+```col-md
+flexGrow=1
+===
 ![[<% tp.file.title %> Journal#Evening Data]]
-
---- end-multi-column
+```
+````
 
 ## Daily Meta
 
