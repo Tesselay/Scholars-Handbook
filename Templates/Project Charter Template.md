@@ -8,45 +8,56 @@ cssclass: line2
 
 ---
 
-````col
-```col-md
+``````col
+`````col-md
 flexGrow=3
 ===
-##### Project Purpose:
+#### Project Purpose:
+Text
 
-##### Objectives:
-
-##### Scope:
-
+````col
+```col-md
+flexGrow=1
+===
+#### Objectives:
+-
 ```
 ```col-md
 flexGrow=1
 ===
+#### Scope:
+-
+```
+````
+
+`````
+`````col-md
+flexGrow=1
+===
 > [!infobox]
-> # <% tp.file.title %>
+> # Project Title
 > ![[scottishhighlands.jpg|cover hsmall]]
 > 
 > | Status | state |
 > | --- | --- |
 >
-> Started: yyyy-mm-dd 
+> Started: YYYY-MM-DD 
 >
 > ##### Team
 >
 > | Role          | Name |
 > | ------------- | ---- |
-> | Project Owner | name |
 > 
 > ##### Stakeholders
 > 
 > | Name | Position |
 > | ---- | -------- |
-
-```
-````
-
-
-
+> 
+> ##### Sources
+>| F:\Repositories\HallsOfTormentData|
+>|------------------------------|
+`````
+```````
 
 
 
