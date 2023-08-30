@@ -92,13 +92,13 @@ Shadow: off
 ```
 
 > [!morning] #### Morning Data
-> - log-sleep-rating:: 0
+> - log-sleep-rating::
 > - log-nightmares:: no
 
 --- column-end ---
 
 > [!evening] #### Evening Data
-> - log-day-rating:: 0
+> - log-day-rating::
 > - log-song-of-the-day:: 
 > - log-musician-to-remember:: 
 

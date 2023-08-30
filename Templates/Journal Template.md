@@ -42,7 +42,7 @@ flexGrow=1
 ## Morning Data
 
 > [!morning] #### Morning Data
-> - log-sleep-rating:: 0
+> - log-sleep-rating::
 > - log-nightmares:: no
 
 ## Evening Log
@@ -53,7 +53,7 @@ flexGrow=1
 ## Evening Data
 
 > [!evening] #### Evening Data
-> - log-day-rating:: 0
+> - log-day-rating::
 > - log-word-of-the-day:: 
 > - log-song-of-the-day::
 
