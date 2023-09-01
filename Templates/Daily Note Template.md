@@ -52,10 +52,19 @@ flexGrow=1
 
 ## Daily Overview
 
-> ```todoist
-> name: My Tasks 
-> filter: "<% tp.file.title %> | overdue" 
-> ``` 
+> [!col]
+>> [!col-md]
+>> ```gEvent
+>> type: day
+>> date: <% tp.file.title %>
+>> navigation: true
+>> ```
+>
+>> [!col-md-3]
+>> ```todoist
+>> name: My Tasks 
+>> filter: "<% tp.file.title %> | overdue" 
+>> ``` 
 
 ````col
 ```col-md
