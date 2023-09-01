@@ -151,8 +151,8 @@ body{
 		div[data-callout="multi-column"].callout:not(.is-collapsed) { box-shadow: unset;}
 
 		/* Special Adjustment -- for Sanctum because it has "column" callout, Obsidian v0.16.x. Not required for multi-flex as it Sanctum expects the name ends with *=column */
-		.callout[data-callout*=column] .callout-title { display: flex; }
-		.callout[data-callout*=column] .callout-content { display: unset; }
+		/* .callout[data-callout*=column] .callout-title { display: flex; }
+		.callout[data-callout*=column] .callout-content { display: unset; } */
 
 		/* Special Adjustment -- for minimal left margin *//*
 		.markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block.cm-callout > div[data-callout="multi-column"].callout
