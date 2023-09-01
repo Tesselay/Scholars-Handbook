@@ -7,90 +7,60 @@ banner_y: 0.5
 ---
 # <% tp.file.title %>
 
-````col
-```col-md
-flexGrow=1
-===
-> [!button]
-> Previous Day 
-> 
-> **[[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") %>]]**
-```
-```col-md
-flexGrow=1
-===
-> [!button]
-> Next Day 
-> 
-> **[[<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") %>]]**
-```
-```col-md
-flexGrow=1
-===
-> [!button]
-> Week
-> 
-> **[[<% tp.date.now("YYYY-[W]ww", 0, tp.file.title, "YYYY-MM-DD") %>]]**
-```
-```col-md
-flexGrow=1
-===
-> [!button]
-> Month 
-> 
-> **[[<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-MM-DD") %>]]**
-```
-```col-md
-flexGrow=1
-===
-> [!button]
-> Journal
-> 
-> **[[00 Journal/Entries/<% tp.file.title %> Journal|<% tp.file.title %> Journal]]**
-```
-````
+> [!multi-column]
+>> [!button]
+>> Previous Day
+>> 
+>> **[[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") %>]]**
+>
+>> [!button]
+>> Next Day
+>> 
+>> **[[<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") %>]]**
+>
+>> [!button]
+>> Week
+>> 
+>> **[[<% tp.date.now("YYYY-[W]ww", 0, tp.file.title, "YYYY-MM-DD") %>]]**
+>
+>> [!button]
+>> Month
+>> 
+>> **[[<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-MM-DD") %>]]**
+>
+>> [!button]
+>> Journal
+>> 
+>> **[[00 Journal/Entries/<% tp.file.title %> Journal|<% tp.file.title %> Journal]]** 
 
 ## Daily Overview
 
-> [!col]
->> [!col-md]
+> [!multi-column]
+>> [!blank] 
 >> ```gEvent
 >> type: day
 >> date: <% tp.file.title %>
->> navigation: true
 >> ```
 >
->> [!col-md-3]
+>> [!blank|wide-5]
 >> ```todoist
 >> name: My Tasks 
->> filter: "<% tp.file.title %> | overdue" 
+>> filter: "<% tp.file.title %> | overdue"  
 >> ``` 
 
-````col
-```col-md
-flexGrow=1
-===
-![[<% tp.file.title %> Journal#Morning Log]]
-```
-```col-md
-flexGrow=1
-===
-![[<% tp.file.title %> Journal#Evening Log]]
-```
-````
+> [!multi-column]
+>> [!blank]
+>> ![[<% tp.file.title %> Journal#Morning Log]]
+>
+>> [!blank]
+>> ![[<% tp.file.title %> Journal#Evening Log]]
 
-````col
-```col-md
-flexGrow=1
-===
-![[<% tp.file.title %> Journal#Morning Data]]
-```
-```col-md
-flexGrow=1
-===
-![[<% tp.file.title %> Journal#Evening Data]]
-```
-````
+> [!multi-column]
+>> [!blank]
+>> ![[<% tp.file.title %> Journal#Morning Data]]
+>
+>> [!blank]
+>> ![[<% tp.file.title %> Journal#Evening Data]]
 
 ## Daily Meta
 

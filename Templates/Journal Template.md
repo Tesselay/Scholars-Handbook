@@ -7,32 +7,21 @@ cssclass: oc-padding-0
 ---
 # Journal
 
-````col
-```col-md
-flexGrow=1
-===
-> [!button]
-> Previous Journal 
-> 
-> **[[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]** 
-```
-```col-md
-flexGrow=1
-===
-> [!button]
-> Day's Note 
-> 
-> **[[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]** 
-```
-```col-md
-flexGrow=1
-===
-> [!button]
-> Next Journal 
-> 
-> **[[00 Journal/Entries/<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>|<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]**
-```
-````
+> [!multi-column]
+>> [!button]
+>> Previous Journal
+>> 
+>> **[[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]**
+>
+>> [!button]
+>> Days Note
+>> 
+>> **[[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]**
+>
+>> [!button]
+>> Next Journal
+>> 
+>> **[[00 Journal/Entries/<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>|<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]** 
 
 ## Morning Log
 > [!morning] #### 🌅 Morning Log
