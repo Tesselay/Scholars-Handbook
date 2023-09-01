@@ -43,7 +43,7 @@ flexGrow=1
 
 > [!morning] #### Morning Data
 > - log-sleep-rating::
-> - log-nightmares:: no
+> - log-nightmares:: 
 
 ## Evening Log
 > [!evening] #### 🌇 Evening Log
