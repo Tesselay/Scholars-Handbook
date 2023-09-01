@@ -12,3 +12,7 @@ body {
 .callout-content {
   background-color: var(--background-primary-alt);
 }
+
+/*
+	TODO: These need to be applied to the custom callouts that need it 
+*/
