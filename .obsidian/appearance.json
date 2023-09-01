@@ -25,10 +25,11 @@
     "plugin-buttons_neumorphic-button",
     "plugin-mcm_column-block-margin-fix",
     "infobox",
-    "embed_clean-embed"
+    "embed_clean-embed",
+    "plugin-obsidian-columns_background-color"
   ],
   "cssTheme": "AnuPpuccin",
-  "baseFontSize": 16,
+  "baseFontSize": 15,
   "nativeMenus": false,
   "translucency": false
 }
