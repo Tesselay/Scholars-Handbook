@@ -1,4 +1,5 @@
 .obsidian/*
+!.obsidian/snippets
 !.obsidian/appearance.json
 !.obsidian/app.json
 00 Journal/Daily/*
