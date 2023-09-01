@@ -1,6 +1,5 @@
 [
   "table-editor-obsidian",
-  "obsidian-banners",
   "buttons",
   "calendar",
   "callout-manager",
@@ -9,7 +8,6 @@
   "home-tab",
   "obsidian-icon-folder",
   "homepage",
-  "multi-column-markdown",
   "obsidian-columns",
   "omnisearch",
   "periodic-notes",
@@ -18,5 +16,6 @@
   "tag-wrangler",
   "templater-obsidian",
   "todoist-sync-plugin",
-  "editing-toolbar"
+  "editing-toolbar",
+  "google-calendar"
 ]
