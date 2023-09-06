@@ -11,9 +11,10 @@
 	--callout-padding: 0;
 	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
 	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
-}
-.callout[data-callout="datalog"] > .callout-content {
-	background-color: var(--background-primary-alt);
+
+	.callout-content {
+		background-color: var(--background-primary-alt);
+	}
 }
 
 .callout[data-callout="morning"] {
@@ -29,9 +30,10 @@
 	--callout-padding: 0;
 	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
 	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
-}
-.callout[data-callout="morning"] > .callout-content {
-	background-color: var(--background-primary-alt);
+
+	.callout-content {
+		background-color: var(--background-primary-alt);
+	}
 }
 
 .callout[data-callout="evening"] {
@@ -47,9 +49,10 @@
 	--callout-padding: 0;
 	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
 	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
-}
-.callout[data-callout="evening"] > .callout-content {
-	background-color: var(--background-primary-alt);
+
+	.callout-content {
+		background-color: var(--background-primary-alt);
+	}
 }
 
 .callout[data-callout="log"] {
@@ -65,9 +68,14 @@
 	--callout-padding: 0;
 	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
 	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
-}
-.callout[data-callout="log"] > .callout-content {
-	background-color: var(--background-primary-alt);
+
+	.callout-title {
+		padding: 0.5em;
+	}
+
+	.callout-content {
+		background-color: var(--background-primary-alt);
+	}
 }
 
 .callout[data-callout="button"] {
