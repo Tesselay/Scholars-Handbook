@@ -1,50 +1,75 @@
-/* Daily note callouts */
 .callout[data-callout="datalog"] {
 	--callout-color: 106, 135, 149;
 	--callout-icon: none;
 	border: 1px solid rgba(255, 255, 255, 0.09);
 	border-radius: 10px;
 	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+
+	--callout-border-width:  0 0 0 4px;
+	--callout-border-opacity:  1;
+	--callout-radius: 0;
+	--callout-padding: 0;
+	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
+	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
 }
+.callout[data-callout="datalog"] > .callout-content {
+	background-color: var(--background-primary-alt);
+}
+
 .callout[data-callout="morning"] {
 	--callout-color: 240, 205, 0;
 	--callout-icon: none;
 	border: 1px solid rgba(255, 255, 255, 0.09);
 	border-radius: 10px;
 	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+
+	--callout-border-width:  0 0 0 4px;
+	--callout-border-opacity:  1;
+	--callout-radius: 0;
+	--callout-padding: 0;
+	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
+	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
 }
+.callout[data-callout="morning"] > .callout-content {
+	background-color: var(--background-primary-alt);
+}
+
 .callout[data-callout="evening"] {
 	--callout-color: 57, 32, 51;
 	--callout-icon: none;
 	border: 1px solid rgba(255, 255, 255, 0.09);
 	border-radius: 10px;
 	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+
+	--callout-border-width:  0 0 0 4px;
+	--callout-border-opacity:  1;
+	--callout-radius: 0;
+	--callout-padding: 0;
+	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
+	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
 }
-.callout[data-callout="journal"] {
-	--callout-color: 0, 0, 0;
-	--callout-icon: none;
-	border: 1px solid rgba(255, 255, 255, 0.09);
-	border-radius: 10px;
-	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+.callout[data-callout="evening"] > .callout-content {
+	background-color: var(--background-primary-alt);
 }
-.callout[data-callout="transparent"] {
-	--callout-color: 255, 255, 255;
-	--callout-icon: none;
-	border: 1px solid rgba(255, 255, 255, 0.09);
-	border-radius: 10px;
-	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
-	
-	.callout-title {
-		display: none;
-	}
-}
+
 .callout[data-callout="log"] {
 	--callout-color: 255, 255, 255;
 	--callout-icon: none;
 	border: 1px solid rgba(255, 255, 255, 0.09);
 	border-radius: 10px;
 	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
+
+	--callout-border-width:  0 0 0 4px;
+	--callout-border-opacity:  1;
+	--callout-radius: 0;
+	--callout-padding: 0;
+	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
+	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
 }
+.callout[data-callout="log"] > .callout-content {
+	background-color: var(--background-primary-alt);
+}
+
 .callout[data-callout="button"] {
 	--callout-icon: none;
 	border: 1px solid rgba(255, 255, 255, 0.2);
