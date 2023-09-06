@@ -1,9 +1,10 @@
 ---
-type: daily
+type: journal
 date: <% tp.file.title.split(" ")[0] %>
 banner: "![[5centimeterspersecond.png]]"
 banner_y: 0.172
-cssclass: oc-padding-0
+cssclasses:
+  - oc-padding-0
 ---
 # Journal
 
