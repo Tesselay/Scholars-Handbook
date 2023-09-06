@@ -5,15 +5,13 @@
 	border-radius: 10px;
 	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
 
-	--callout-border-width:  0 0 0 4px;
-	--callout-border-opacity:  1;
-	--callout-radius: 0;
-	--callout-padding: 0;
-	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
-	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
+	.callout-title {
+		padding: 0.25em 0.75em;
+	}
 
 	.callout-content {
 		background-color: var(--background-primary-alt);
+		padding: var(--size-4-4) var(--size-4-4);
 	}
 }
 
@@ -24,15 +22,13 @@
 	border-radius: 10px;
 	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
 
-	--callout-border-width:  0 0 0 4px;
-	--callout-border-opacity:  1;
-	--callout-radius: 0;
-	--callout-padding: 0;
-	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
-	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
+	.callout-title {
+		padding: 0.25em 0.75em;
+	}
 
 	.callout-content {
 		background-color: var(--background-primary-alt);
+		padding: var(--size-4-4) var(--size-4-4);
 	}
 }
 
@@ -43,15 +39,13 @@
 	border-radius: 10px;
 	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
 
-	--callout-border-width:  0 0 0 4px;
-	--callout-border-opacity:  1;
-	--callout-radius: 0;
-	--callout-padding: 0;
-	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
-	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
+	.callout-title {
+		padding: 0.25em 0.75em;
+	}
 
 	.callout-content {
 		background-color: var(--background-primary-alt);
+		padding: var(--size-4-4) var(--size-4-4);
 	}
 }
 
@@ -62,19 +56,13 @@
 	border-radius: 10px;
 	box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.10);
 
-	--callout-border-width:  0 0 0 4px;
-	--callout-border-opacity:  1;
-	--callout-radius: 0;
-	--callout-padding: 0;
-	--callout-title-padding:  var(--size-4-4) var(--size-4-4);
-	--callout-content-padding:  var(--size-4-2) var(--size-4-4);
-
 	.callout-title {
 		padding: 0.5em;
 	}
 
 	.callout-content {
 		background-color: var(--background-primary-alt);
+		--callout-content-padding:  var(--size-4-2) var(--size-4-4);
 	}
 }
 
