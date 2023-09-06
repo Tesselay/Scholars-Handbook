@@ -17,12 +17,11 @@
     "workspace_heading-size",
     "workspace_file-width",
     "callouts_customized",
-    "callouts_glow-disable",
-    "code_background",
     "embed_clean-embed",
     "infobox",
     "MCL Multi Column",
-    "snippet-mcl-multi-column_column-fix"
+    "snippet-mcl-multi-column_column-fix",
+    "callouts_glow-disable"
   ],
   "cssTheme": "AnuPpuccin",
   "baseFontSize": 16,
