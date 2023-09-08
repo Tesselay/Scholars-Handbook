@@ -7,5 +7,6 @@
   "defaultViewMode": "preview",
   "showFrontmatter": false,
   "newFileLocation": "folder",
-  "newFileFolderPath": "22 Unordered"
+  "newFileFolderPath": "22 Unordered",
+  "propertiesInDocument": "visible"
 }
