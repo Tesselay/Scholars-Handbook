@@ -26,7 +26,8 @@ cssclasses:
 
 ## Morning Log
 > [!morning] #### 🌅 Morning Log
-> 00:00
+> 🕘 **00:00**
+> 
 > Text
 
 ## Morning Data
@@ -37,7 +38,8 @@ cssclasses:
 
 ## Evening Log
 > [!evening] #### 🌇 Evening Log
-> 00:00
+> 🕤 **00:00**
+> 
 > Text
 
 ## Evening Data
