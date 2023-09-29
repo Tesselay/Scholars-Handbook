@@ -7,9 +7,15 @@ banner_y: 0.508
 
 ## Project Title
 
-Description
+*Description*
 
 ```todoist
 name: Tasks
-filter: "#<todoit-project-name> | /<section-name>"
+filter: "#<todoit-project-name> & /<section-name>"
+```
+
+### What has been done
+
+```query
+#tag
 ```
