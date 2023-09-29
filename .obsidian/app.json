@@ -1,12 +1,5 @@
 {
-  "showInlineTitle": false,
+  "promptDelete": false,
   "livePreview": false,
-  "attachmentFolderPath": "Assets",
-  "readableLineLength": true,
-  "alwaysUpdateLinks": true,
-  "defaultViewMode": "preview",
-  "showFrontmatter": false,
-  "newFileLocation": "folder",
-  "newFileFolderPath": "22 Unordered",
-  "propertiesInDocument": "visible"
+  "showInlineTitle": false
 }

@@ -2,17 +2,17 @@
   "accentColor": "",
   "theme": "obsidian",
   "enabledCssSnippets": [
-    "callouts_customized",
     "callouts_glow-disable",
     "embed_clean-embed",
     "infobox",
     "MCL Multi Column",
     "snippet-mcl-multi-column_column-fix",
     "workspace_file-width",
-    "workspace_heading-size"
+    "workspace_heading-size",
+    "callouts_customized"
   ],
   "cssTheme": "AnuPpuccin",
-  "baseFontSize": 16,
+  "baseFontSize": 15,
   "nativeMenus": false,
   "translucency": false
 }

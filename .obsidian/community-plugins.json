@@ -4,9 +4,10 @@
   "callout-manager",
   "obsidian-custom-frames",
   "dataview",
+  "editing-toolbar",
   "home-tab",
-  "obsidian-icon-folder",
   "homepage",
+  "obsidian-icon-folder",
   "obsidian-columns",
   "omnisearch",
   "periodic-notes",
@@ -15,6 +16,7 @@
   "tag-wrangler",
   "templater-obsidian",
   "todoist-sync-plugin",
-  "editing-toolbar",
+  "colored-tags",
+  "highlightr-plugin",
   "google-calendar"
 ]

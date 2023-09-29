@@ -26,7 +26,7 @@ cssclasses:
 
 ## Morning Log
 > [!morning] #### 🌅 Morning Log
-> 🕘 **00:00**
+> 🕘 **hh:mm**
 > 
 > Text
 
@@ -38,7 +38,7 @@ cssclasses:
 
 ## Evening Log
 > [!evening] #### 🌇 Evening Log
-> 🕤 **00:00**
+> 🕤 **hh:mm**
 > 
 > Text
 
@@ -52,6 +52,9 @@ cssclasses:
 ## Learning
 ### Terminology / Words
 - log-learned-term::
+
+### Translation
+- log-learned-translation::
 
 ### Generic
 - log-learned-today:: 
