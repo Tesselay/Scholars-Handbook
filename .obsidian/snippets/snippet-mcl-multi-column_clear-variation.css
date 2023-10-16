@@ -1,0 +1,3 @@
+div[data-callout="multi-column"][data-callout-metadata*="clear"].callout {
+	clear: none;
+}
