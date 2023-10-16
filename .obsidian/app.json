@@ -1,5 +1,7 @@
 {
   "promptDelete": false,
   "livePreview": false,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "Assets"
 }
