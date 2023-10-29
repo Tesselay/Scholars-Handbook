@@ -2,12 +2,15 @@
   "table-editor-obsidian",
   "calendar",
   "callout-manager",
+  "colored-tags",
   "obsidian-custom-frames",
   "dataview",
   "editing-toolbar",
+  "google-calendar",
   "home-tab",
   "homepage",
   "obsidian-icon-folder",
+  "metadata-menu",
   "omnisearch",
   "periodic-notes",
   "obsidian-projects",
@@ -15,7 +18,5 @@
   "tag-wrangler",
   "templater-obsidian",
   "todoist-sync-plugin",
-  "colored-tags",
-  "highlightr-plugin",
-  "google-calendar"
+  "highlightr-plugin"
 ]
