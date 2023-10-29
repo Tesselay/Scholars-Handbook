@@ -3,5 +3,7 @@
   "livePreview": false,
   "showInlineTitle": false,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "Assets"
+  "attachmentFolderPath": "Assets",
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "preview"
 }
