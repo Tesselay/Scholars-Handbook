@@ -4,13 +4,13 @@
   "enabledCssSnippets": [
     "callouts_glow-disable",
     "embed_clean-embed",
-    "infobox",
     "MCL Multi Column",
     "snippet-mcl-multi-column_column-fix",
     "workspace_file-width",
     "workspace_heading-size",
     "callouts_customized",
-    "snippet-mcl-multi-column_clear-variation"
+    "snippet-mcl-multi-column_clear-variation",
+    "infobox"
   ],
   "cssTheme": "AnuPpuccin",
   "baseFontSize": 15,
