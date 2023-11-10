@@ -1,9 +1,7 @@
 {
-  "promptDelete": false,
+  "attachmentFolderPath": "Assets",
   "livePreview": false,
   "showInlineTitle": false,
-  "showUnsupportedFiles": true,
-  "attachmentFolderPath": "Assets",
   "alwaysUpdateLinks": true,
-  "defaultViewMode": "preview"
+  "showUnsupportedFiles": false
 }

@@ -2,21 +2,23 @@
   "accentColor": "",
   "theme": "obsidian",
   "enabledCssSnippets": [
+    "callouts_glow-disable",
+    "embed_clean-embed",
+    "infobox",
     "MCL Multi Column",
     "snippet-mcl-multi-column_column-fix",
     "workspace_file-width",
     "workspace_heading-size",
-    "snippet-mcl-multi-column_clear-variation",
-    "infobox",
     "callouts_customized",
-    "callouts_glow-disable",
-    "embed_clean-embed",
-    "seperator_customized",
-    "test",
-    "custom_colors"
+    "snippet-mcl-multi-column_clear-variation",
+    "separator_customized"
   ],
   "cssTheme": "AnuPpuccin",
   "baseFontSize": 15,
   "nativeMenus": false,
-  "translucency": false
+  "translucency": false,
+  "interfaceFontFamily": "Fira Sans",
+  "textFontFamily": "Fira Sans",
+  "monospaceFontFamily": "Fira Code",
+  "showViewHeader": true
 }
