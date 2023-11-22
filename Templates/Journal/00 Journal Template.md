@@ -42,6 +42,13 @@ cssclasses:
 > 
 > Text
 
+> [!evening] #### 🙏 Gratitude Journal
+> 1.
+> 2.
+> 3.
+> 4.
+> 5.
+
 ### Evening Data
 
 > [!evening] #### Evening Data
