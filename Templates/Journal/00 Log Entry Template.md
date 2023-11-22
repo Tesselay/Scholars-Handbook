@@ -1,4 +1,4 @@
-> [!log]+
+> [!log]+ Title
+> #tag 
 > 
-> 
-> 
+> Text
