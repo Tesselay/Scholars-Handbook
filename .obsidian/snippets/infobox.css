@@ -77,6 +77,7 @@
 .callout[data-callout="projectinfobox"] > .callout-content > .callout[data-callout="multi-column"] > .callout-content > .callout[data-callout="blank"] {
 	margin-top: 0;
 	margin-left: 1rem;
+	flex-shrink: unset; 
 }
 
 div[data-callout="multi-column"][data-callout-metadata*="no-wrap"].callout > .callout-content > *:is(div,ul) {
