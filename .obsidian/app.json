@@ -1,7 +1,9 @@
 {
+  "defaultViewMode": "preview",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": false,
   "attachmentFolderPath": "Assets",
   "livePreview": false,
   "showInlineTitle": false,
-  "alwaysUpdateLinks": true,
-  "showUnsupportedFiles": false
+  "showLineNumber": false
 }

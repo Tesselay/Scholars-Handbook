@@ -1,6 +1,5 @@
 [
   "table-editor-obsidian",
-  "calendar",
   "callout-manager",
   "colored-tags",
   "obsidian-custom-frames",
@@ -17,5 +16,7 @@
   "obsidian-style-settings",
   "tag-wrangler",
   "templater-obsidian",
-  "todoist-sync-plugin"
+  "todoist-sync-plugin",
+  "calendar",
+  "recent-files-obsidian"
 ]
