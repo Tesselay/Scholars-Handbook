@@ -11,14 +11,17 @@
     "workspace_heading-size",
     "callouts_customized",
     "snippet-mcl-multi-column_clear-variation",
-    "separator_customized"
+    "separator_customized",
+    "extended-colorschemes",
+    "custom_colors",
+    "test"
   ],
   "cssTheme": "AnuPpuccin",
   "baseFontSize": 15,
   "nativeMenus": false,
   "translucency": false,
-  "interfaceFontFamily": "Fira Sans",
-  "textFontFamily": "Fira Sans",
-  "monospaceFontFamily": "Fira Code",
+  "interfaceFontFamily": "Overpass,Fira Sans",
+  "textFontFamily": "Rubik,Fira Sans",
+  "monospaceFontFamily": "Noto Serif,Fira Code",
   "showViewHeader": true
 }
