@@ -38,7 +38,7 @@ banner_y: 0.5
 > [!multi-column]
 >> [!blank] 
 >> ```gEvent
->> type: day
+>> type: week
 >> date: <% tp.file.title %>
 >> ```
 >
