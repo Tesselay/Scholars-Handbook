@@ -51,26 +51,6 @@
 	}
 }
 
-/* .callout[data-callout="datalog"] {
-	--callout-color: 106, 135, 149;
-}
-
-.callout[data-callout="morning"] {
-	--callout-color: 240, 205, 0;
-}
-
-.callout[data-callout="evening"] {
-	--callout-color: 57, 32, 51;
-}
-
-.callout[data-callout="log"] {
-	--callout-color: 255, 255, 255;
-
-	.callout-title {
-		padding: 0.5em;
-	}
-} */
-
 .callout[data-callout="button"] {
 	--callout-icon: none;
 	border: 1px solid rgba(255, 255, 255, 0.2);
