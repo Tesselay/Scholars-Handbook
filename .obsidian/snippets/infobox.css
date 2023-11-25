@@ -11,7 +11,7 @@
 /* ║ Obsidian Template                                                                                                  ║ */
 /* ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣ */
 /* ║ Name:                    ║ Project Infobox                                                                         ║ */
-/* ║ Version:                 ║ 1.0.0                                                                                   ║ */
+/* ║ Version:                 ║ 1.1.1                                                                                   ║ */
 /* ║ Author:                  ║ Tesselay                                                                                ║ */
 /* ║ License:                 ║ MIT                                                                                     ║ */
 /* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
@@ -25,9 +25,10 @@
 	float: right;
 	margin-top: var(--p-spacing);
 	margin-bottom: 0px !important;
-	box-shadow: 2px -2px 14px #14171b, -2px 2px 6px #242931 !important;
-	background-color: var(--background-primary);
-	filter: brightness(140%);
+	background-color: var(--color-base-20);
+	filter: brightness(120%);
+	box-shadow: 8px 8px 16px var(--color-base-00), 
+				-4px -4px 10px var(--color-base-25) !important;
 }
 
 /* Spacing */
