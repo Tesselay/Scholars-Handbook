@@ -24,34 +24,34 @@ cssclasses:
 >> 
 >> **[[00 Journal/Entries/<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>|<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]** 
 
-### Morning Log
-> [!morning] #### 🌅 Morning Log
+###### Morning
+> [!morning] ### 🌅 Morning Log
 > 🕘 **hh:mm**
 > 
 > Text
 
-### Morning Data
+###### Morning Data
 
-> [!morning] #### Morning Data
+> [!morning] ### Morning Data
 > - log-sleep-rating::
 > - log-nightmares:: 
 
-### Evening Log
-> [!evening] #### 🌇 Evening Log
+###### Evening
+> [!evening] ### 🌇 Evening Log
 > 🕤 **hh:mm**
 > 
 > Text
 
-> [!evening] #### 🙏 Gratitude Journal
+> [!evening] ### 🙏 Gratitude Journal
 > 1.
 > 2.
 > 3.
 > 4.
 > 5.
 
-### Evening Data
+###### Evening Data
 
-> [!evening] #### Evening Data
+> [!evening] ### Evening Data
 > - log-day-rating::
 > - log-song-of-the-day::
 
@@ -66,7 +66,7 @@ cssclasses:
 - log-learned-today:: 
 
 ## Logs
-> [!log]+ 
+> [!log]+ ### Title
 > #tag 
 >
 > Text

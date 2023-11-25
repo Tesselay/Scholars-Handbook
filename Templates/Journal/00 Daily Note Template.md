@@ -50,10 +50,10 @@ banner_y: 0.5
 
 > [!multi-column]
 >> [!blank]
->> ![[<% tp.file.title %> Journal#Morning Log]]
+>> ![[<% tp.file.title %> Journal#Morning]]
 >
 >> [!blank]
->> ![[<% tp.file.title %> Journal#Evening Log]]
+>> ![[<% tp.file.title %> Journal#Evening]]
 
 > [!multi-column]
 >> [!blank]
