@@ -1,14 +1,17 @@
+@import url("extended-colorschemes.css");
+@import url("../themes/AnuPpuccin/theme.css");
+
 .callout[data-callout="datalog"],
 .callout[data-callout="evening"],
 .callout[data-callout="log"],
 .callout[data-callout="morning"] {
 	--callout-icon: none;
-	background-color: var(--background-primary) !important;
+	background-color: var(--color-base-20) !important;
 	filter: brightness(120%);
 	
 	border-radius: 10px;
-	border-color: var(--background-primary);
-	box-shadow: 2px -2px 14px #14171b, -2px 2px 6px #242931 !important;
+	box-shadow: 8px 8px 16px var(--color-base-00), 
+				-4px -4px 10px var(--color-base-25) !important;
 
 	.callout-title {
 		color: var(--text-normal);
@@ -24,14 +27,15 @@
 		margin: 0; 
 	}
 
+	margin-bottom: 1.5em;
 }
 
 .callout[data-callout="morning"] {
-	background: linear-gradient(-15deg, hsla(240, 9%, 13%, 1) 0%, hsla(250, 9%, 13%, 1) 57%, hsla(51, 39%, 19%, 1) 100%);
+	background: linear-gradient(-90deg, var(--color-base-20) 99%, var(--color-orange) 100%);
 }
 
 .callout[data-callout="evening"] {
-	background: linear-gradient(-15deg, hsla(240, 9%, 13%, 1) 0%, hsla(250, 9%, 13%, 1) 57%, hsla(330, 18%, 17%, 1) 100%);
+	background: linear-gradient(-90deg, var(--color-base-20) 99%, var(--color-red) 100%);
 }
 
 .callout[data-callout="log"] > .callout-content > p {
