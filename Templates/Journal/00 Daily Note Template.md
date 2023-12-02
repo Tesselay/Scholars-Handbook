@@ -42,7 +42,7 @@ banner_y: 0.5
 >> date: <% tp.file.title %>
 >> ```
 >
->> [!blank|wide-5]
+>> [!blank]
 >> ```todoist
 >> name: My Tasks 
 >> filter: "<% tp.file.title %> | overdue"  
