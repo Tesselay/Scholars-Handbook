@@ -1,7 +1,7 @@
 ---
 type:
   - iframe
-  - task overview
+  - external
 date: YYYY-MM-DD
 cssclasses:
   - line3

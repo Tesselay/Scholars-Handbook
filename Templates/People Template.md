@@ -1,7 +1,8 @@
 ---
 name: <% tp.file.title %>
-aliases: test
-type: [Person, Place of Context, Further Context]
+aliases:
+  - test
+type: []
 date-met: test
 location: test
 cover: test

@@ -1,7 +1,7 @@
 ---
-type: project overview
 date: yyyy-mm-dd
-cssclass: line2
+cssclasses:
+  - line2
 ---
 
 # <% tp.file.title %>

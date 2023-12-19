@@ -1,9 +1,12 @@
 ---
-type: weekly
+type:
+  - automatic
 date: <% tp.date.weekday("YYYY-MM-DD",  0, tp.file.title, "YYYY-[W]ww") %>
 banner: "![[scottishhighlands.jpg]]"
-cssclass: line3, clean-embed
 banner_y: 0.5
+cssclasses:
+  - line3
+  - clean-embed
 ---
 
 > [!multi-column]

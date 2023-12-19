@@ -1,5 +1,7 @@
 ---
-type: project charter
+type:
+  - home
+  - automatic
 date: yyyy-mm-dd
 banner: "![[scottishhighlands.jpg]]"
 banner_y: 0.508

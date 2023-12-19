@@ -1,5 +1,6 @@
 ---
-type: mentions
+type:
+  - automatic
 date: yyyy-mm-dd
 ---
 

@@ -1,5 +1,7 @@
 ---
-type: moc
+type:
+  - automatic
+  - home
 date: yyyy-mm-dd
 banner: "![[scottishhighlands.jpg]]"
 banner_y: 0.5

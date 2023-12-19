@@ -1,7 +1,6 @@
 ---
 type:
   - iframe
-  - task overview
 date: 2023-09-07
 cssclasses:
   - line3
