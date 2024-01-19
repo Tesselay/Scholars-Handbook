@@ -56,13 +56,6 @@ cssclasses:
 > - log-song-of-the-day::
 
 ## What I Learned
-### Terminology / Words
-- log-learned-term::
-
-### Translation
-- log-learned-translation::
-
-### Generic
 - log-learned-today:: 
 
 ## Logs
