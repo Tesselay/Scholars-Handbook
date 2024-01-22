@@ -9,6 +9,8 @@ cssclasses:
   - clean-embed
 ---
 
+# <% tp.file.title %>
+
 > [!multi-column]
 >> [!button]
 >> <% tp.date.weekday("dddd",  0, tp.file.title, "YYYY-[W]ww") %>
@@ -40,3 +42,163 @@ cssclasses:
 
 ---
 
+## Data
+
+```dataviewjs
+dv.span("**Sleep Rating**")
+
+const calendarData = {
+	year: <% tp.date.now("YYYY",  0, tp.file.title, "YYYY") %>, 
+	colors: {  
+		red2green: [
+			`#de425b`, 
+			`#ee6856`,
+			`#f88b56`,
+			`#fdae5f`,
+			`#ffd072`,
+			`#fff18f`,
+			`#cede82`,
+			`#9fc97a`,
+			`#72b474`,
+			`#459e70`,    
+			`#488f31`
+		],
+	},
+	showCurrentDayBorder: true, 
+	intensityScaleStart: 0, 
+	intensityScaleEnd: 10, 
+	entries: [],
+}
+
+for (let page of dv.pages('"00 Journal/Entries"').where(p => p["log-sleep-rating"])) {
+	calendarData.entries.push({
+		date: (page.file.name).slice(0, 10), 
+		intensity: page["log-sleep-rating"]
+	})
+}
+
+renderHeatmapCalendar(this.container, calendarData)
+```
+
+```dataviewjs
+dv.span("**Nightmares**")
+
+const calendarData = {
+	year: <% tp.date.now("YYYY",  0, tp.file.title, "YYYY") %>,
+	colors: {  
+		red2green: [
+			`#de425b`, 
+			`#488f31`,
+			`#488f31`
+		],
+	},
+	showCurrentDayBorder: true, 
+	intensityScaleStart: 1, 
+	intensityScaleEnd: 2, 
+	entries: [],
+}
+
+for (let page of dv.pages('"00 Journal/Entries"').where(p => p["log-nightmares"])) {
+	let test;
+	if (page["log-nightmares"] == "yes" ) {
+		test = 1
+	} else if (page["log-nightmares"] == "no") {
+		test = 2
+	} 
+	console.log(test)
+	calendarData.entries.push({
+		date: (page.file.name).slice(0, 10), 
+		intensity: test
+	})
+}
+
+renderHeatmapCalendar(this.container, calendarData)
+```
+
+```dataviewjs
+dv.span("**Day Rating**")
+
+const calendarData = {
+	year: <% tp.date.now("YYYY",  0, tp.file.title, "YYYY") %>,
+	colors: {  
+		red2green: [
+			`#de425b`, 
+			`#ee6856`,
+			`#f88b56`,
+			`#fdae5f`,
+			`#ffd072`,
+			`#fff18f`,
+			`#cede82`,
+			`#9fc97a`,
+			`#72b474`,
+			`#459e70`,    
+			`#488f31`
+		],
+	},
+	showCurrentDayBorder: true, 
+	intensityScaleStart: 0, 
+	intensityScaleEnd: 10, 
+	entries: [],
+}
+
+for (let page of dv.pages('"00 Journal/Entries"').where(p => p["log-day-rating"])) {
+	calendarData.entries.push({
+		date: (page.file.name).slice(0, 10), 
+		intensity: page["log-day-rating"]
+	})
+}
+
+renderHeatmapCalendar(this.container, calendarData)
+```
+
+## Songs of the Week
+
+```dataview
+LIST log-song-of-the-day
+FROM "00 Journal/Entries"
+WHERE log-song-of-the-day AND date >= date("<% tp.date.weekday('YYYY-MM-DD',  0, tp.file.title, 'YYYY-[W]ww') %>")  AND date <= date("<% tp.date.weekday('YYYY-MM-DD',  6, tp.file.title, 'YYYY-[W]ww') %>")
+```
+
+## Learned
+
+```dataview
+LIST log-learned-today 
+FROM "00 Journal/Entries"
+WHERE log-learned-today AND date >= date("<% tp.date.weekday('YYYY-MM-DD',  0, tp.file.title, 'YYYY-[W]ww') %>")  AND date <= date("<% tp.date.weekday('YYYY-MM-DD',  6, tp.file.title, 'YYYY-[W]ww') %>")
+```
+
+## Logs
+
+> [!multi-column] 
+>> [!blank] 
+>> #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD",  0, tp.file.title, "YYYY-[W]ww") %> Journal|Monday <% tp.date.weekday("YYYY-MM-DD",  0, tp.file.title, "YYYY-[W]ww") %>]]
+>> ![[<% tp.date.weekday("YYYY-MM-DD",  0, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
+>
+>> [!blank]
+>> #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD",  1, tp.file.title, "YYYY-[W]ww") %> Journal|Tuesday <% tp.date.weekday("YYYY-MM-DD",  1, tp.file.title, "YYYY-[W]ww") %>]]
+>>![[<% tp.date.weekday("YYYY-MM-DD",  1, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
+
+> [!multi-column]
+>> [!blank]
+>> #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD",  2, tp.file.title, "YYYY-[W]ww") %> Journal|Wednesday <% tp.date.weekday("YYYY-MM-DD",  2, tp.file.title, "YYYY-[W]ww") %>]]
+>>![[<% tp.date.weekday("YYYY-MM-DD",  2, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
+>
+>> [!blank]
+>> #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD",  3, tp.file.title, "YYYY-[W]ww") %> Journal|Thursday <% tp.date.weekday("YYYY-MM-DD",  3, tp.file.title, "YYYY-[W]ww") %>]]
+>>![[<% tp.date.weekday("YYYY-MM-DD",  3, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
+
+> [!multi-column]
+>> [!blank]
+>> #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD",  5, tp.file.title, "YYYY-[W]ww") %> Journal|Friday <% tp.date.weekday("YYYY-MM-DD",  4, tp.file.title, "YYYY-[W]ww") %>]]
+>>![[<% tp.date.weekday("YYYY-MM-DD",  4, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
+>
+>> [!blank]
+>> #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD",  5, tp.file.title, "YYYY-[W]ww") %> Journal|Saturday <% tp.date.weekday("YYYY-MM-DD",  5, tp.file.title, "YYYY-[W]ww") %>]]
+>>![[<% tp.date.weekday("YYYY-MM-DD",  5, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
+
+> [!multi-column]
+>> [!blank]
+>> #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD",  6, tp.file.title, "YYYY-[W]ww") %> Journal|Sunday <% tp.date.weekday("YYYY-MM-DD",  6, tp.file.title, "YYYY-[W]ww") %>]]
+>>![[<% tp.date.weekday("YYYY-MM-DD",  6, tp.file.title, "YYYY-[W]ww") %>Journal#Logs]]
+>
+>> [!blank]
