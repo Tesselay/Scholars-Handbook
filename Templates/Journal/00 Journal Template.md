@@ -59,7 +59,4 @@ cssclasses:
 - log-learned-today:: 
 
 ## Logs
-> [!log]+ ### Title
-> #tag 
->
-> Text
+
