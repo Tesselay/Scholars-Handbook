@@ -1,9 +1,11 @@
 {
-  "defaultViewMode": "preview",
+  "attachmentFolderPath": "Assets",
+  "livePreview": true,
+  "showInlineTitle": false,
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": false,
-  "attachmentFolderPath": "Assets",
-  "livePreview": false,
-  "showInlineTitle": false,
-  "showLineNumber": false
+  "defaultViewMode": "preview",
+  "showLineNumber": false,
+  "promptDelete": false,
+  "propertiesInDocument": "hidden"
 }
