@@ -30,6 +30,9 @@ cssclasses:
 > 
 > Text
 
+> [!morning] ### 💭 Dream Journal
+> 
+> Text
 ###### Morning Data
 
 > [!morning] ### Morning Data
@@ -53,6 +56,7 @@ cssclasses:
 > 1.
 > 2.
 > 3.
+
 ###### Evening Data
 
 > [!evening] ### Evening Data
