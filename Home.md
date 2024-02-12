@@ -5,7 +5,8 @@ banner_y: 0.5
 cssclass: line2
 ---
 
-# Welcome back, Dominique
+> [!multi-column|center-fixed]
+> # Welcome back, Dominique
 
 ```widgets
 type: clock
@@ -68,8 +69,3 @@ author: Lorem Ipsum
 >> ```
 
 ---
-
-
-
-
-
