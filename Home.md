@@ -69,3 +69,10 @@ author: Lorem Ipsum
 >> ```
 
 ---
+
+```custom-frames
+frame: Proton Calendar
+style: height: 80vh; width: 100%;
+```
+
+---
