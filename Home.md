@@ -76,3 +76,22 @@ style: height: 80vh; width: 100%;
 ```
 
 ---
+
+> [!multi-column]
+>> [!blank] 
+>> ```dataviewjs
+>> let projectLinks = [];
+>> for (let project of dv.pages('"10 Project"').where(p => p.file.name == "+MOC")) {
+>> 	projectLinks.push(dv.fileLink(project.file.path, false, project.project));
+>> }
+>> dv.table(["Projects"], projectLinks.map(p => [p]))
+>> ```
+>
+>> [!blank]
+>> ```dataviewjs
+>> let areaLinks = [];
+>> for (let area of dv.pages('"20 Area"').where(p => p.file.name == "+MOC")) {
+>> 	areaLinks.push(dv.fileLink(area.file.path, false, area.area));
+>> }
+>> dv.table(["Areas"], areaLinks.map(p => [p]))
+>> ```
