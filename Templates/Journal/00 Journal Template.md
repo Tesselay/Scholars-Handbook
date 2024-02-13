@@ -61,7 +61,6 @@ cssclasses:
 
 > [!evening] ### Evening Data
 > - log-day-rating::
-> - log-song-of-the-day::
 
 ## What I Learned
 - log-learned-today:: 
