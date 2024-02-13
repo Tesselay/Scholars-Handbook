@@ -3,8 +3,9 @@ parent: "[[Home]]"
 title: Home
 cssclasses:
   - line2
-date-created: 22/11/2023 22:11
-date-modified: 13/02/2024 14:02
+date-created: 2023-11-22T22:51:53+01:00
+date-modified: 2024-02-13T18:07:18+01:00
+mb-projectName: Test
 ---
 
 > [!multi-column|center-fixed]
@@ -94,7 +95,7 @@ style: height: 80vh; width: 100%;
 > > ```
 >
 > > [!datalog] ### Areas
-> >
+>
 > > ```dataviewjs
 > > let areaLinks = [];
 > > for (let area of dv.pages('"20 Area"').where(p => p.file.name == "+MOC")) {
