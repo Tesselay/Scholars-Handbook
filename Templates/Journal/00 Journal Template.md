@@ -1,6 +1,8 @@
 ---
 parent: 
 title: Journal
+type: journal
+date: <% tp.file.title.split(" ")[0] %>
 cssclasses:
   - oc-padding-0
 date-created: 2023-11-17T20:35:12+01:00

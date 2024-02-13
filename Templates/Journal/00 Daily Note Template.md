@@ -1,6 +1,8 @@
 ---
 parent: 
 title: <% tp.file.title %>
+type: daily
+date: <% tp.file.title %>
 cssclasses:
   - line3
   - clean-embed
