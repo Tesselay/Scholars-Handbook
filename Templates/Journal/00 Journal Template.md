@@ -1,48 +1,53 @@
 ---
-type: journal
-date: <% tp.file.title.split(" ")[0] %>
-banner: "![[5centimeterspersecond.png]]"
-banner_y: 0.172
+parent: 
+title: Journal
 cssclasses:
   - oc-padding-0
+date-created: 17/11/2023 20:11
+date-modified: 13/02/2024 14:02
 ---
+
 # Journal
 
 > [!multi-column]
->> [!button]
->> Previous Journal
->> 
->> **[[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]**
 >
->> [!button]
->> Days Note
->> 
->> **[[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]**
+> > [!button]
+> > Previous Journal
+> >
+> > **[[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]**
 >
->> [!button]
->> Next Journal
->> 
->> **[[00 Journal/Entries/<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>|<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]** 
+> > [!button]
+> > Days Note
+> >
+> > **[[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]**
+>
+> > [!button]
+> > Next Journal
+> >
+> > **[[00 Journal/Entries/<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>|<% tp.date.now("YYYY-MM-DD", +1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]**
 
 ###### Morning
+
 > [!morning] ### 🌅 Morning Log
 > 🕘 **hh:mm**
-> 
+>
 > Text
 
 > [!morning] ### 💭 Dream Journal
-> 
+>
 > Text
+
 ###### Morning Data
 
 > [!morning] ### Morning Data
 > - log-sleep-rating::
-> - log-nightmares:: 
+> - log-nightmares::
 
 ###### Evening
+
 > [!evening] ### 🌇 Evening Log
 > 🕤 **hh:mm**
-> 
+>
 > Text
 
 > [!evening] ### 🙏 Gratitude Journal
@@ -63,7 +68,7 @@ cssclasses:
 > - log-day-rating::
 
 ## What I Learned
-- log-learned-today:: 
+
+- log-learned-today::
 
 ## Logs
-

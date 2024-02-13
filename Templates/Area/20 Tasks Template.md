@@ -1,12 +1,13 @@
 ---
-type:
-  - iframe
-  - external
-date: YYYY-MM-DD
-cssclasses:
-  - line3
+parent: 
+title: 20 Tasks Template
+area: 
 tags:
   - obsidian/tasks
+cssclasses:
+  - line3
+date-created: 17/11/2023 20:11
+date-modified: 13/02/2024 14:02
 ---
 
 ```custom-frames

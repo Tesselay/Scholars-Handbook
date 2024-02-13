@@ -1,10 +1,9 @@
 ---
-type:
-  - home
-  - automatic
-date: yyyy-mm-dd
-banner: "![[scottishhighlands.jpg]]"
-banner_y: 0.508
+parent: 
+title: 20 Project Template
+area: 
+date-created: 17/11/2023 20:11
+date-modified: 13/02/2024 14:02
 ---
 
 ## Project Title
@@ -16,7 +15,7 @@ name: Tasks
 filter: "#<todoit-project-name> & /<section-name>"
 ```
 
-### What has been done
+### What Has Been Done
 
 ```query
 #tag
