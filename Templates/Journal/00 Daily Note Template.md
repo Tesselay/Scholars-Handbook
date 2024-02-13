@@ -74,16 +74,17 @@ date-modified: 2024-02-13T18:07:09+01:00
 
 ## Daily Meta
 
-> [!datalog] #### Files created today
-> ```dataview
-> list
-> where file.cday = date(this.file.name)
-> sort file.ctime desc
-> ```
-
-> [!datalog] #### Files updated today
-> ```dataview
-> list
-> where file.mday = date(this.file.name)
-> sort file.ctime desc
-> ```
+> [!multi-column]
+> > [!datalog] #### Files created today
+> > ```dataview
+> > list
+> > where file.cday = date(this.file.name)
+> > sort file.ctime desc
+> > ```
+>
+> > [!datalog] #### Files updated today
+> > ```dataview
+> > list
+> > where file.mday = date(this.file.name)
+> > sort file.ctime desc
+> > ```
