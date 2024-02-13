@@ -6,7 +6,7 @@ cssclass: line2
 ---
 
 > [!multi-column|center-fixed]
-> # Welcome back, Dominique
+> <h1 style="font-size: 4rem">Welcome back, Dominique</h1>
 
 ```widgets
 type: clock
