@@ -95,3 +95,18 @@ style: height: 80vh; width: 100%;
 >> }
 >> dv.table(["Areas"], areaLinks.map(p => [p]))
 >> ```
+
+> [!multi-column]
+>> [!datalog] ### Recent Knowledge
+>> ```dataview
+>> list 
+>> where type = "knowledge"
+>> limit 15
+>> ```
+>
+>> [!datalog] ### Recently Changed Files
+>> ```dataview
+>> list 
+>> where file.mtime >= date(today) - dur(1 day)
+>> limit 15
+>> ```
