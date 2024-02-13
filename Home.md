@@ -4,7 +4,7 @@ title: Home
 cssclasses:
   - line2
 date-created: 2023-11-22T22:51:53+01:00
-date-modified: 2024-02-13T18:07:18+01:00
+date-modified: 2024-02-13T20:06:57+01:00
 mb-projectName: Test
 ---
 
@@ -95,7 +95,6 @@ style: height: 80vh; width: 100%;
 > > ```
 >
 > > [!datalog] ### Areas
->
 > > ```dataviewjs
 > > let areaLinks = [];
 > > for (let area of dv.pages('"20 Area"').where(p => p.file.name == "+MOC")) {
@@ -113,6 +112,7 @@ style: height: 80vh; width: 100%;
 > > ```dataview
 > > list 
 > > where type = "knowledge"
+> > sort file.ctime desc
 > > limit 15
 > > ```
 >
@@ -120,6 +120,7 @@ style: height: 80vh; width: 100%;
 > >
 > > ```dataview
 > > list 
-> > where file.mtime >= date(today) - dur(1 day)
+> > from ""
+> > sort file.mtime desc
 > > limit 15
 > > ```
