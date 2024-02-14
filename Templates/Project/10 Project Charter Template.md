@@ -1,6 +1,6 @@
 ---
 parent: 
-title: <% tp.file.title %>
+title: 
 project: 
 cssclasses:
   - line2

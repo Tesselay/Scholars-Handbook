@@ -1,6 +1,6 @@
 ---
 parent: 
-title: 10 Tasks Template
+title: 
 project: 
 tags:
   - obsidian/tasks

@@ -1,6 +1,6 @@
 ---
 parent: 
-title: Journal
+title: 
 type: journal
 date: <% tp.file.title.split(" ")[0] %>
 cssclasses:

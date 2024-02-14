@@ -1,6 +1,6 @@
 ---
 parent: 
-title: <% tp.file.title %>
+title: 
 type: daily
 date: <% tp.file.title %>
 cssclasses:
@@ -43,12 +43,6 @@ date-modified: 2024-02-13T18:07:09+01:00
 ## Daily Overview
 
 > [!multi-column]
->
-> > [!blank]
-> > ```gEvent
-> > type: week
-> > date: <% tp.file.title %>
-> > ```
 >
 > > [!blank]
 > > ```todoist

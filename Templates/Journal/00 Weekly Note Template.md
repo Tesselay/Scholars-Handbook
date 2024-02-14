@@ -1,6 +1,6 @@
 ---
 parent: 
-title: <% tp.file.title %>
+title: 
 date: <% tp.date.weekday("YYYY-MM-DD",  0, tp.file.title, "YYYY-[W]ww") %>
 cssclasses:
   - line3

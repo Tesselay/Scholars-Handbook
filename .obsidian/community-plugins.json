@@ -5,7 +5,6 @@
   "obsidian-custom-frames",
   "dataview",
   "editing-toolbar",
-  "google-calendar",
   "periodic-notes",
   "obsidian-projects",
   "recent-files-obsidian",
@@ -20,5 +19,7 @@
   "heatmap-calendar",
   "cmdr",
   "homepage",
-  "widgets"
+  "widgets",
+  "obsidian-linter",
+  "google-calendar"
 ]

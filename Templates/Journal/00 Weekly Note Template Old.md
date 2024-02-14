@@ -1,6 +1,6 @@
 ---
 parent: 
-title: <% tp.file.title %>
+title: 
 cssclasses:
   - line3
   - clean-embed

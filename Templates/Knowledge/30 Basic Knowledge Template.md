@@ -1,6 +1,6 @@
 ---
 parent: 
-title: Title
+title: 
 type: knowledge
 tags: 
 sources: 
