@@ -4,8 +4,8 @@ title:
 cssclasses:
   - line3
   - clean-embed
-date-created: 2024-01-22T20:59:05+01:00
-date-modified: 2024-02-13T18:07:09+01:00
+date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
+date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 ---
 
 # <% tp.file.title %>

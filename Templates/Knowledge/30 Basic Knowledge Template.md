@@ -5,8 +5,8 @@ type: knowledge
 domain:
 tags: 
 sources: 
-date-created: 2024-02-13T16:53:40+01:00
-date-modified: 2024-02-13T18:16:07+01:00
+date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
+date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 ---
 
 # Title

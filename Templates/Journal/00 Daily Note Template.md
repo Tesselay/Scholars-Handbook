@@ -7,8 +7,8 @@ cssclasses:
   - line3
   - clean-embed
   - oc-padding-0
-date-created: 2023-10-10T16:25:35+02:00
-date-modified: 2024-02-13T18:07:09+01:00
+date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
+date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 ---
 
 # <% tp.file.title %>
