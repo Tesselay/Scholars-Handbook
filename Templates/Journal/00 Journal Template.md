@@ -69,7 +69,4 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 
 ## What I Learned
 
-- log-learned-today::
-
 ## Logs
-2023-11-17T20:35:12+01:00
