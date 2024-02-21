@@ -1,5 +1,5 @@
 ---
-parent: <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>
+parent: '[[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]'
 title: 
 type: journal
 date: <% tp.file.title.split(" ")[0] %>
