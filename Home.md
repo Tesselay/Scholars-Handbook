@@ -4,7 +4,7 @@ title: Home
 cssclasses:
   - line2
 date-created: 2023-11-22T22:51:53+01:00
-date-modified: 2024-02-18T13:38:00+01:00
+date-modified: 2024-02-28T19:55:26+01:00
 mb-projectName: Test
 ---
 
@@ -78,6 +78,13 @@ author: Lorem Ipsum
 ```custom-frames
 frame: Proton Calendar
 style: height: 80vh; width: 100%;
+```
+
+---
+
+```todoist
+name: Inbox
+filter: "#Inbox"
 ```
 
 ---
