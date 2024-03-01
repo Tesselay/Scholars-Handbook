@@ -4,8 +4,7 @@ title: Home
 cssclasses:
   - line2
 date-created: 2023-11-22T22:51:53+01:00
-date-modified: 2024-02-28T19:55:26+01:00
-mb-projectName: Test
+date-modified: 2024-03-01T11:37:38+01:00
 ---
 
 > [!multi-column|center-fixed]
@@ -29,48 +28,40 @@ author: Lorem Ipsum
 > > Today's Note
 > >
 > > ```dataviewjs
-> > let dailyNoteAmount = dv.pages('"00 Journal/Periodic/Daily"').length 
-> > let todayNote = dv.pages('"00 Journal/Periodic/Daily"')[dailyNoteAmount-1].file.link.path;
-> > let todayNoteFullPath = todayNote.substring(0, todayNote.length - 3);
-> > let todayNoteAbridgedPath = todayNoteFullPath.split("/");
-> > todayNoteAbridgedPath = todayNoteAbridgedPath[todayNoteAbridgedPath.length - 1]
-> > dv.span("**[[" + todayNoteFullPath + "|" + todayNoteAbridgedPath + "]]**");
+> > let today = new Date()
+> > today = new Date(today.getTime() + 60 * 60000)
+> > let todayString = today.toISOString().substring(0, 10)
+> > dv.span("**[[" + todayString + "]]**");
 > > ```
 >
 > > [!button]
 > > This Week's Note
 > >
 > > ```dataviewjs
-> > let weeklyNoteAmount = dv.pages('"00 Journal/Periodic/Weekly"').length 
-> > let weeksNote = dv.pages('"00 Journal/Periodic/Weekly"')[weeklyNoteAmount-1].file.link.path;
-> > let weeksNoteFullPath = weeksNote.substring(0, weeksNote.length - 3);
-> > let weeksNoteAbridgedPath = weeksNoteFullPath.split("/");
-> > weeksNoteAbridgedPath = weeksNoteAbridgedPath[weeksNoteAbridgedPath.length - 1]
-> > dv.span("**[[" + weeksNoteFullPath + "|" + weeksNoteAbridgedPath + "]]**");
+> > let today = new Date()
+> > today = new Date(today.getTime() + 60 * 60000)
+> > let firstDayOfYear = new Date(today.getFullYear(), 0, 1);
+> > let thisWeek = Math.ceil( ( (today - firstDayOfYear + 86400000) / 86400000) / 7 ).toString().padStart(2, "0")
+> > dv.span("**[[" + today.getFullYear() + "-W" + thisWeek + "]]**")
 > > ```
 >
 > > [!button]
 > > This Month's Note
 > >
 > > ```dataviewjs
-> > let monthlyNoteAmount = dv.pages('"00 Journal/Periodic/Monthly"').length 
-> > let monthsNote = dv.pages('"00 Journal/Periodic/Monthly"')[monthlyNoteAmount-1].file.link.path;
-> > let monthsNoteFullPath = monthsNote.substring(0, monthsNote.length - 3);
-> > let monthsNoteAbridgedPath = monthsNoteFullPath.split("/");
-> > monthsNoteAbridgedPath = monthsNoteAbridgedPath[monthsNoteAbridgedPath.length - 1]
-> > dv.span("**[[" + monthsNoteFullPath + "|" + monthsNoteAbridgedPath + "]]**");
+> > let today = new Date();
+> > today = new Date(today.getTime() + 60 * 60000)
+> > let todayString = today.toISOString().substring(0, 7)
+> > dv.span("**[[" + todayString + "]]**");
 > > ```
 >
 > > [!button]
 > > This Year's Note
 > >
 > > ```dataviewjs
-> > let yearlyNoteAmount = dv.pages('"00 Journal/Periodic/Yearly"').length 
-> > let yearlyNote = dv.pages('"00 Journal/Periodic/Yearly"')[yearlyNoteAmount-1].file.link.path;
-> > let yearlyNoteFullPath = yearlyNote.substring(0, yearlyNote.length - 3);
-> > let yearlyNoteAbridgedPath = yearlyNoteFullPath.split("/");
-> > yearlyNoteAbridgedPath = yearlyNoteAbridgedPath[yearlyNoteAbridgedPath.length - 1]
-> > dv.span("**[[" + yearlyNoteFullPath + "|" + yearlyNoteAbridgedPath + "]]**");
+> > let today = new Date();
+> > today = new Date(today.getTime() + 60 * 60000)
+> > dv.span("**[[" + today.getFullYear() + "]]**");
 > > ```
 
 ---
