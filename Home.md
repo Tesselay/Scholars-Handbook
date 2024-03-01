@@ -4,7 +4,7 @@ title: Home
 cssclasses:
   - line2
 date-created: 2023-11-22T22:51:53+01:00
-date-modified: 2024-03-01T11:37:38+01:00
+date-modified: 2024-03-01T12:06:27+01:00
 ---
 
 > [!multi-column|center-fixed]
@@ -30,6 +30,7 @@ author: Lorem Ipsum
 > > ```dataviewjs
 > > let today = new Date()
 > > today = new Date(today.getTime() + 60 * 60000)
+> > console.log(today.toISOString())
 > > let todayString = today.toISOString().substring(0, 10)
 > > dv.span("**[[" + todayString + "]]**");
 > > ```
@@ -41,7 +42,7 @@ author: Lorem Ipsum
 > > let today = new Date()
 > > today = new Date(today.getTime() + 60 * 60000)
 > > let firstDayOfYear = new Date(today.getFullYear(), 0, 1);
-> > let thisWeek = Math.ceil( ( (today - firstDayOfYear + 86400000) / 86400000) / 7 ).toString().padStart(2, "0")
+> > let thisWeek = Math.ceil( ( (today - firstDayOfYear) / 86400000) / 7 ).toString().padStart(2, "0")
 > > dv.span("**[[" + today.getFullYear() + "-W" + thisWeek + "]]**")
 > > ```
 >
