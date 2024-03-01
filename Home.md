@@ -32,7 +32,7 @@ author: Lorem Ipsum
 > > today = new Date(today.getTime() + 60 * 60000)
 > > console.log(today.toISOString())
 > > let todayString = today.toISOString().substring(0, 10)
-> > dv.span("**[[" + todayString + "]]**");
+> > dv.span("**[[" + todayString + "]]**")
 > > ```
 >
 > > [!button]
@@ -53,7 +53,7 @@ author: Lorem Ipsum
 > > let today = new Date();
 > > today = new Date(today.getTime() + 60 * 60000)
 > > let todayString = today.toISOString().substring(0, 7)
-> > dv.span("**[[" + todayString + "]]**");
+> > dv.span("**[[" + todayString + "]]**")
 > > ```
 >
 > > [!button]
@@ -62,7 +62,7 @@ author: Lorem Ipsum
 > > ```dataviewjs
 > > let today = new Date();
 > > today = new Date(today.getTime() + 60 * 60000)
-> > dv.span("**[[" + today.getFullYear() + "]]**");
+> > dv.span("**[[" + today.getFullYear() + "]]**")
 > > ```
 
 ---
