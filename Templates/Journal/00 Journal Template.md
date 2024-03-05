@@ -16,12 +16,12 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 > > [!button]
 > > Previous Journal
 > >
-> > **[[<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]**
+> > **[[00 Journal/Entries/<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") + " Journal" %>|<% tp.date.now("YYYY-MM-DD", -1, tp.file.title, "YYYY-MM-DD") + " Journal" %>]]**
 >
 > > [!button]
 > > Days Note
 > >
-> > **[[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]**
+> > **[[00 Journal/Periodic/Daily/<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>|<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]**
 >
 > > [!button]
 > > Next Journal
