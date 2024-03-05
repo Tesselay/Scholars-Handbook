@@ -9,7 +9,7 @@ date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 ---
 
-# Journal
+# <% tp.file.title %>
 
 > [!multi-column]
 >
