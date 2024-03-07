@@ -1,11 +1,12 @@
 {
   "attachmentFolderPath": "Assets",
-  "livePreview": true,
+  "livePreview": false,
   "showInlineTitle": false,
   "alwaysUpdateLinks": true,
-  "showUnsupportedFiles": false,
+  "showUnsupportedFiles": true,
   "defaultViewMode": "preview",
   "showLineNumber": false,
   "promptDelete": false,
-  "propertiesInDocument": "hidden"
+  "propertiesInDocument": "hidden",
+  "newLinkFormat": "absolute"
 }
