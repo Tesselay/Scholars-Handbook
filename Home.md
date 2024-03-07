@@ -4,7 +4,7 @@ title: Home
 cssclasses:
   - line2
 date-created: 2023-11-22T22:51:53+01:00
-date-modified: 2024-03-01T12:06:27+01:00
+date-modified: 2024-03-07T22:24:46+01:00
 ---
 
 > [!multi-column|center-fixed]
@@ -32,7 +32,7 @@ author: Lorem Ipsum
 > > today = new Date(today.getTime() + 60 * 60000)
 > > console.log(today.toISOString())
 > > let todayString = today.toISOString().substring(0, 10)
-> > dv.span("**[[" + todayString + "]]**")
+> > dv.span("**[[" + "00 Journal/Periodic/Daily/" + todayString + "|" + todayString + "]]**")
 > > ```
 >
 > > [!button]
@@ -43,7 +43,7 @@ author: Lorem Ipsum
 > > today = new Date(today.getTime() + 60 * 60000)
 > > let firstDayOfYear = new Date(today.getFullYear(), 0, 1);
 > > let thisWeek = Math.ceil( ( (today - firstDayOfYear) / 86400000) / 7 ).toString().padStart(2, "0")
-> > dv.span("**[[" + today.getFullYear() + "-W" + thisWeek + "]]**")
+> > dv.span("**[[" + "00 Journal/Periodic/Weekly/" + today.getFullYear() + "-W" + thisWeek + "|" + today.getFullYear() + "-W" + thisWeek + "]]**")
 > > ```
 >
 > > [!button]
@@ -52,8 +52,8 @@ author: Lorem Ipsum
 > > ```dataviewjs
 > > let today = new Date();
 > > today = new Date(today.getTime() + 60 * 60000)
-> > let todayString = today.toISOString().substring(0, 7)
-> > dv.span("**[[" + todayString + "]]**")
+> > let thisMonthString = today.toISOString().substring(0, 7)
+> > dv.span("**[[" + "00 Journal/Periodic/Monthly/" + thisMonthString + "|" + thisMonthString + "]]**")
 > > ```
 >
 > > [!button]
@@ -62,7 +62,7 @@ author: Lorem Ipsum
 > > ```dataviewjs
 > > let today = new Date();
 > > today = new Date(today.getTime() + 60 * 60000)
-> > dv.span("**[[" + today.getFullYear() + "]]**")
+> > dv.span("**[[" + "00 Journal/Periodic/Yearly/" + today.getFullYear() + "|" + today.getFullYear() + "]]**")
 > > ```
 
 ---
