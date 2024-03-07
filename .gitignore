@@ -15,3 +15,8 @@ Unordered/*
 .obsidian/snippets/test.css
 .trash/*
 *.jar
+!00 Journal/Entries/YYYY-MM-DD Journal
+!00 Journal/Periodic/Daily/YYYY-MM-DD
+!00 Journal/Periodic/Weekly/YYYY-Www
+!00 Journal/Periodic/Monthly/YYYY-MM
+!00 Journal/Periodic/Yearly/YYYY
