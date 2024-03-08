@@ -35,7 +35,9 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 >
 > Text
 
-> [!morning] ### 💭 Dream Journal
+> [!morning] ### 💭 Dream
+> - log-dream-lucidity::
+> - log-dream-clarity::
 >
 > Text
 
