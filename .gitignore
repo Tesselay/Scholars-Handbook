@@ -1,17 +1,5 @@
-.obsidian/*
 !.obsidian/snippets
 !.obsidian/appearance.json
 !.obsidian/app.json
-00 Journal/*
-10 Project/*
-20 Area/*
-30 Knowledge/*
-40 Personalities/*
-50 Glossar/*
-60 Dictionary/*
-Assets/*
-Archive/*
-Unordered/*
 .obsidian/snippets/test.css
 .trash/*
-*.jar
