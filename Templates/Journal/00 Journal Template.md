@@ -69,6 +69,9 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 > [!evening] ### Evening Data
 > - log-day-rating::
 
+> [!evening] ### Habits
+> - 
+
 ## What I Learned
 
 ## Logs
