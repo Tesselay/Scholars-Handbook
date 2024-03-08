@@ -1,9 +1,9 @@
 ---
-parent: "[[20 Area/21 Example Area/EA +MOC|EA +MOC]]"
+parent: "[[20 Area/Example Area/EA +MOC|EA +MOC]]"
 title: Project
-area: 21 Example Area
+area: Example Area
 date-created: 2023-11-17T20:35:12+01:00
-date-modified: 2024-02-18T13:34:08+01:00
+date-modified: 2024-03-08T11:39:48+01:00
 ---
 
 ## Example Sub Project

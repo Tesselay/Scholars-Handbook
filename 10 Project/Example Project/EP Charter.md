@@ -1,13 +1,13 @@
 ---
 parent: "[[10 Project/11 Example Project/EP +MOC]]"
 title: Charter
-project: 11 Example Project
+project: Example Project
 tags:
   - project/example-project
 cssclasses:
   - line2
 date-created: 2023-11-17T20:35:12+01:00
-date-modified: 2024-02-18T22:02:39+01:00
+date-modified: 2024-03-08T11:40:17+01:00
 ---
 
 # Charter
