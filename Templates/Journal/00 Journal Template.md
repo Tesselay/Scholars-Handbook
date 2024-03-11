@@ -31,7 +31,7 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 ###### Morning
 
 > [!morning] ### 🌅 Morning Log
-> 🕘 **hh:mm**
+> 🕘 (log-morning-time:: **hh:mm**)
 >
 > Text
 
@@ -50,7 +50,7 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 ###### Evening
 
 > [!evening] ### 🌇 Evening Log
-> 🕤 **hh:mm**
+> 🕤 (log-evening-time:: **hh:mm**)
 >
 > Text
 
