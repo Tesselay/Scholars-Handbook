@@ -12,6 +12,16 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 # <% tp.file.title %>
 
 > [!multi-column]
+> 
+> > [!button]
+> > <% tp.date.now("YYYY-[W]ww", -1, tp.file.title, "YYYY-[W]ww") %>
+> > **[[00 Journal/Periodic/Weekly/<% tp.date.now("YYYY-[W]ww", -1, tp.file.title, "YYYY-[W]ww") %>|<% tp.date.now("YYYY-[W]ww", -1, tp.file.title, "YYYY-[W]ww") %>]]**
+> 
+> > [!button]
+> > <% tp.date.now("YYYY-[W]ww", "P1W", tp.file.title, "YYYY-[W]ww") %>
+> > **[[00 Journal/Periodic/Weekly/<% tp.date.now("YYYY-[W]ww", "P1W", tp.file.title, "YYYY-[W]ww") %>|<% tp.date.now("YYYY-[W]ww", "P1W", tp.file.title, "YYYY-[W]ww") %>]]**
+
+> [!multi-column]
 >
 > > [!button]
 > > <% tp.date.weekday("dddd", 0, tp.file.title, "YYYY-[W]ww") %>
