@@ -14,8 +14,8 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 > [!multi-column]
 > 
 > > [!button]
-> > <% tp.date.now("YYYY-[W]ww", -1, tp.file.title, "YYYY-[W]ww") %>
-> > **[[00 Journal/Periodic/Weekly/<% tp.date.now("YYYY-[W]ww", -1, tp.file.title, "YYYY-[W]ww") %>|<% tp.date.now("YYYY-[W]ww", -1, tp.file.title, "YYYY-[W]ww") %>]]**
+> > <% tp.date.now("YYYY-[W]ww", "P-1W", tp.file.title, "YYYY-[W]ww") %>
+> > **[[00 Journal/Periodic/Weekly/<% tp.date.now("YYYY-[W]ww", "P-1W", tp.file.title, "YYYY-[W]ww") %>|<% tp.date.now("YYYY-[W]ww", "P-1W", tp.file.title, "YYYY-[W]ww") %>]]**
 > 
 > > [!button]
 > > <% tp.date.now("YYYY-[W]ww", "P1W", tp.file.title, "YYYY-[W]ww") %>
@@ -55,112 +55,156 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 
 ## Data
 
-```dataviewjs
-dv.span("**Sleep Rating**")
-
-const calendarData = {
-	year: <% tp.date.now("YYYY",  0, tp.file.title, "YYYY") %>, 
-	colors: {  
-		red2green: [
-			`#de425b`, 
-			`#ee6856`,
-			`#f88b56`,
-			`#fdae5f`,
-			`#ffd072`,
-			`#fff18f`,
-			`#cede82`,
-			`#9fc97a`,
-			`#72b474`,
-			`#459e70`,    
-			`#488f31`
-		],
-	},
-	showCurrentDayBorder: true, 
-	intensityScaleStart: 0, 
-	intensityScaleEnd: 10, 
-	entries: [],
-}
-
-for (let page of dv.pages('"00 Journal/Entries"').where(p => p["log-sleep-rating"])) {
-	calendarData.entries.push({
-		date: (page.file.name).slice(0, 10), 
-		intensity: page["log-sleep-rating"]
-	})
-}
-
-renderHeatmapCalendar(this.container, calendarData)
-```
-
-```dataviewjs
-dv.span("**Nightmares**")
-
-const calendarData = {
-	year: <% tp.date.now("YYYY",  0, tp.file.title, "YYYY") %>,
-	colors: {  
-		red2green: [
-			`#de425b`, 
-			`#488f31`,
-			`#488f31`
-		],
-	},
-	showCurrentDayBorder: true, 
-	intensityScaleStart: 1, 
-	intensityScaleEnd: 2, 
-	entries: [],
-}
-
-for (let page of dv.pages('"00 Journal/Entries"').where(p => p["log-nightmares"])) {
-	let test;
-	if (page["log-nightmares"] == "yes" ) {
-		test = 1
-	} else if (page["log-nightmares"] == "no") {
-		test = 2
-	} 
-	console.log(test)
-	calendarData.entries.push({
-		date: (page.file.name).slice(0, 10), 
-		intensity: test
-	})
-}
-
-renderHeatmapCalendar(this.container, calendarData)
-```
-
-```dataviewjs
-dv.span("**Day Rating**")
-
-const calendarData = {
-	year: <% tp.date.now("YYYY",  0, tp.file.title, "YYYY") %>,
-	colors: {  
-		red2green: [
-			`#de425b`, 
-			`#ee6856`,
-			`#f88b56`,
-			`#fdae5f`,
-			`#ffd072`,
-			`#fff18f`,
-			`#cede82`,
-			`#9fc97a`,
-			`#72b474`,
-			`#459e70`,    
-			`#488f31`
-		],
-	},
-	showCurrentDayBorder: true, 
-	intensityScaleStart: 0, 
-	intensityScaleEnd: 10, 
-	entries: [],
-}
-
-for (let page of dv.pages('"00 Journal/Entries"').where(p => p["log-day-rating"])) {
-	calendarData.entries.push({
-		date: (page.file.name).slice(0, 10), 
-		intensity: page["log-day-rating"]
-	})
-}
-
-renderHeatmapCalendar(this.container, calendarData)
-```
+> [!multi-column]
+>
+>> [!blank]
+>> ```dataviewjs
+>> const pages = dv.pages('"00 Journal/Entries"').where(p => p.file.frontmatter.date >= '<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>' && p.file.frontmatter.date <= '<% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>').sort((a) => a.file.frontmatter.date)
+>> const pageDates = pages.map(p => p.file.frontmatter.date).values
+>> const pageSleepRatings = pages.map(p => p['log-sleep-rating']).values
+>> const pageDayRatings = pages.map(p => p['log-day-rating']).values
+>> 
+>> const pageNightmares = pages.map(p => p["log-nightmares"] === "yes" ? {x: 0, y:5} : {x: 0, y:0})
+>> 
+>> const chartData = {
+>> 	data: {
+>> 		labels: pageDates,
+>> 		datasets: [
+>> 			{
+>> 				type: 'line',
+>> 				label: 'Sleep Rating',
+>> 				data: pageSleepRatings,
+>> 				backgroundColor: [
+>> 					'rgba(172, 167, 252, 0.2)'
+>> 				],
+>> 				borderColor: [
+>> 					'rgba(172, 167, 252, 1)'
+>> 				],
+>> 				borderWidth: 1,
+>> 				fill: true
+>> 			},
+>> 			{
+>> 				type: 'line',
+>> 				label: 'Day Rating',
+>> 				data: pageDayRatings,
+>> 				backgroundColor: [
+>> 					'rgba(52, 166, 41, 0.2)'
+>> 				],
+>> 				borderColor: [
+>> 					'rgba(52, 166, 41, 1)'
+>> 				],
+>> 				borderWidth: 1,
+>> 				fill: true
+>> 			},
+>> 			{
+>> 				type: 'bar',
+>> 				label: 'Nightmare',
+>> 				data: [...pageNightmares],
+>> 				backgroundColor: 'rgba(156, 0, 3, 0.2)',
+>> 				borderColor: 'rgba(156, 0, 3, 0.5)',
+>> 				borderWidth: 1,
+>> 				barPercentage: 0.5,
+>> 			}
+>> 		]
+>> 	},
+>> 	options: {
+>> 		scales: {
+>> 			y: {
+>> 				suggestedMax: 10,
+>> 				suggestedMin: 0,
+>> 				title: {
+>> 					text: 'Rating',
+>> 					display: true
+>> 				}
+>> 			},
+>> 			y1: {
+>> 				suggestedMax: 10,
+>> 				suggestedMin: 0,
+>> 				position: 'right',
+>> 				title: {
+>> 					display: true
+>> 				},
+>> 				ticks: {
+>> 					callback: function(value, index, ticks) {
+>> 						switch(value) {
+>> 							case 0:
+>> 								return "no"
+>> 							case 5:
+>> 								return "yes"
+>> 						}	
+>> 					}
+>> 				}
+>> 			},
+>> 
+>> 		},
+>> 		plugins: {
+>> 			title: {
+>> 				display: true,
+>> 				text: 'Sleep / Day'
+>> 			}
+>> 		}
+>> 	}
+>> }
+>> 
+>> window.renderChart(chartData, this.container)
+>> ```
+> 
+>> [!blank] 
+>> ```dataviewjs
+>> const pages = dv.pages('"00 Journal/Entries"').where(p => p.file.frontmatter.date >= '<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>' && p.file.frontmatter.date <= '<% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>').sort((a) => a.file.frontmatter.date)
+>> const pageDates = pages.map(p => p.file.frontmatter.date).values
+>> 
+>> const habits = pages.file.tasks.where(t => t.text.includes('#habit')).groupBy(h => h.text)
+>> let habitsDatasets = [];
+>> habits.values.forEach(element => {
+>> 	let habitSuccesses = element.rows.values.filter(x => x.completed);
+>> 	let habitEntries = habitSuccesses.map( entry => ({ 
+>> 		x: entry.path.substring( entry.path.lastIndexOf('/') + 1, entry.path.indexOf(' Journal.md') ),
+>> 		y: element.key,
+>> 	}));
+>> 	habitsDatasets.push(habitEntries)
+>> }) 
+>> habitsDatasets = habitsDatasets.flat()
+>> 
+>> const habitsLegend = habits.array().map(x => x.key)
+>> 
+>> const chartData = {
+>> 	  type: 'matrix',
+>> 	  data: {
+>> 	    datasets: [{
+>> 	      data: habitsDatasets,
+>> 	      backgroundColor: 'rgba(33, 173, 70, 0.8)',
+>> 	      width: ({chart}) => (chart.chartArea || {}).width / 7 - 1,
+>> 	      height: ({chart}) => (chart.chartArea || {}).height / 5 - 1,
+>> 	    }],
+>> 	  },
+>> 	options: {
+>> 		scales: {
+>> 			x: {
+>> 				type: 'category',
+>> 				labels: pageDates,
+>> 				offset: true
+>> 			},
+>> 			y: {
+>> 				type: 'category',
+>> 				labels: habitsLegend,
+>> 				offset: true
+>> 			}
+>> 		},
+>> 		plugins: {
+>> 			title: {
+>> 				display: true,
+>> 				text: 'Habits'
+>> 			},
+>> 			legend: {
+>> 				display: false
+>> 			}
+>> 		}
+>> 	}
+>>}
+> >
+> >window.renderChart(chartData, this.container)
+> >```
 
 ## Songs of the Week
 
