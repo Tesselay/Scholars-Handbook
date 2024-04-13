@@ -35,11 +35,14 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 >
 > Text
 
-> [!morning] ### 💭 Dream
-> - log-dream-lucidity::
-> - log-dream-clarity::
->
-> Text
+```meta-bind-button
+label: Add Dream
+style: default
+actions:
+  - type: replaceSelf 
+    replacement: "Templates/Journal/Meta Bind Replacements/02 MBR Dream Entry.md"
+    templater: true
+```
 
 ###### Morning Data
 
@@ -70,8 +73,20 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 > - log-day-rating::
 
 > [!evening] ### Habits
-> - 
+> - [ ] #habit | morning brush
+> - [ ] #habit | interdental brush 
+> - [ ] #habit | breakfast 
+> - [ ] #habit | up before 7am 
+> - [ ] #habit | read today
 
 ## What I Learned
 
 ## Logs
+```meta-bind-button
+label: Add Log Entry
+style: default
+actions:
+  - type: replaceSelf 
+    replacement: "Templates/Journal/Meta Bind Replacements/02 MBR Log Entry.md"
+    templater: true
+```
