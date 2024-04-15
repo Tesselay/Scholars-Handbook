@@ -1,5 +1,5 @@
 ---
-parent:  obsidian://advanced-uri?vault=Second%20Brain&commandname=Projects:%20Show%20<%* tp.file.folder() %>
+parent:  obsidian://advanced-uri?vault=Second%20Brain&commandname=Projects:%20Show%20<%* tR += tp.file.folder().replaceAll(' ', '%20') %>
 title: <% tp.file.folder() %>
 project: <% tp.file.folder() %>
 status: Not Started
