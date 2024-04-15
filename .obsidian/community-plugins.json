@@ -24,5 +24,9 @@
   "templater-obsidian",
   "todoist-sync-plugin",
   "various-complements",
-  "widgets"
+  "widgets",
+  "obsidian-charts",
+  "obsidian-meta-bind-plugin",
+  "quickadd",
+  "modalforms"
 ]
