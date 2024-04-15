@@ -40,7 +40,7 @@ label: Add Dream
 style: default
 actions:
   - type: replaceSelf 
-    replacement: "Templates/Journal/Meta Bind Replacements/02 MBR Dream Entry.md"
+    replacement: "Templates/Journal/Meta Bind Replacements/02 MBR Dream Entry Template.md"
     templater: true
 ```
 
@@ -87,6 +87,6 @@ label: Add Log Entry
 style: default
 actions:
   - type: replaceSelf 
-    replacement: "Templates/Journal/Meta Bind Replacements/02 MBR Log Entry.md"
+    replacement: "Templates/Journal/Meta Bind Replacements/02 MBR Log Entry Template.md"
     templater: true
 ```
