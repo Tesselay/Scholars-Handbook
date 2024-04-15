@@ -1,38 +1,37 @@
 ---
-parent: 
-title: 
-project: 
+parent:  obsidian://advanced-uri?vault=Second%20Brain&commandname=Projects:%20Show%20<%* tp.file.folder() %>
+title: <% tp.file.folder() %>
+project: <% tp.file.folder() %>
+status: Not Started
+team: []
+sources: []
+tags:
 cssclasses:
   - line2
 date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 ---
 
-# <% tp.file.title %>
+# <% tp.file.folder() %>
 
 ---
 
 > [!projectinfobox|right-small]
 > ![[scottishhighlands.jpg|cover hsmall]]
-> #### Project Title
-> ##### *YYYY-MM-DD* | <font color="#7f7f7f">Status</font>
+> #### <% tp.file.folder() %>
+> ##### *<% tp.date.now("YYYY-MM-DD") %>* | `INPUT[inlineSelect(option(Not Started), option(Running), option(Suspended), option(Canceled), option(Completed)):status]`
 >
-> ##### Team
->
-> > [!multi-column|no-wrap]
-> >
-> > > [!blank]
-> > > <font color="#c5cff5">Role</font>
-> >
-> > > [!blank]
-> > > Name
->
-> ##### Sources
->
-> > [!multi-column|no-wrap]
-> >
-> > > [!blank]
-> > > `<path>` or \<url>
+> > [!blank]
+> > #### Team
+> > ```meta-bind
+> > INPUT[list():team]
+> > ``` 
+> 
+> > [!blank]
+> > #### Sources
+> > ```meta-bind
+> > INPUT[list():sources]
+> > ```
 
 #### Project Purpose:
 

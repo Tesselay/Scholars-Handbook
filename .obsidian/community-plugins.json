@@ -25,8 +25,11 @@
   "todoist-sync-plugin",
   "various-complements",
   "widgets",
+  "obsidian-git",
   "obsidian-charts",
-  "obsidian-meta-bind-plugin",
   "quickadd",
-  "modalforms"
+  "obsidian-meta-bind-plugin",
+  "js-engine",
+  "modalforms",
+  "obsidian-advanced-uri"
 ]
