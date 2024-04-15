@@ -11,7 +11,7 @@
 /* ║ Obsidian Template                                                                                                  ║ */
 /* ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣ */
 /* ║ Name:                    ║ Project Infobox                                                                         ║ */
-/* ║ Version:                 ║ 1.1.1                                                                                   ║ */
+/* ║ Version:                 ║ 1.1.2                                                                                   ║ */
 /* ║ Author:                  ║ Tesselay                                                                                ║ */
 /* ║ License:                 ║ MIT                                                                                     ║ */
 /* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
@@ -89,7 +89,6 @@
 
 .callout[data-callout="projectinfobox"] > .callout-content > .callout[data-callout="multi-column"] > .callout-content > .callout[data-callout="blank"] {
 	margin-top: 0;
-	margin-left: 1rem;
 	flex-shrink: unset; 
 }
 
