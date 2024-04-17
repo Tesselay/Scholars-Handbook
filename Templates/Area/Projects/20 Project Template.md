@@ -1,14 +1,21 @@
 ---
-parent: 
-title: 20 Project Template
-area: 
-date-created: 2023-11-17T20:35:12+01:00
-date-modified: 2024-02-13T18:07:09+01:00
+parent: "<%* tR += '[[20 Area/Area Dashboard|Area Dashboard]]' %>"
+title: <% tp.file.folder() %>
+area: <% tp.file.folder() %>
+areapage:  obsidian://advanced-uri?vault=Second%20Brain&commandname=Projects:%20Show%20<%* tR += tp.file.folder().replaceAll(' ', '%20') %>
+type: subproject
+status: Not Started
+tags: 
+cssclasses:
+date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
+date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 ---
 
 ## Project Title
 
 *Description*
+
+`INPUT[inlineSelect(option(Not Started), option(Running), option(Suspended), option(Canceled), option(Completed)):status]`
 
 ```todoist
 name: Tasks

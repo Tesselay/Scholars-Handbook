@@ -1,17 +1,18 @@
 ---
-parent: 
-title: 20 Tasks Template
-area: 
-tags:
-  - obsidian/tasks
+parent: "<%* tR += '[[20 Area/Area Dashboard|Area Dashboard]]' %>"
+title: <% tp.file.folder() %>
+area: <% tp.file.folder() %>
+areapage:  obsidian://advanced-uri?vault=Second%20Brain&commandname=Projects:%20Show%20<%* tR += tp.file.folder().replaceAll(' ', '%20') %>
+type: overview
+tags: 
 cssclasses:
   - line3
-date-created: 2023-11-17T20:35:12+01:00
-date-modified: 2024-02-13T18:07:09+01:00
+date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
+date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 ---
 
 ```custom-frames
 frame: Todoist
 style: height: 80vh; width: 100%;
-urlSuffix: <todoist-project-suffix>
+urlSuffix: <todoist-project-url-suffix>
 ```
