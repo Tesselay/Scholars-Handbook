@@ -4,7 +4,7 @@ title: Home
 cssclasses:
   - line2
 date-created: 2023-11-22T22:51:53+01:00
-date-modified: 2024-03-11T20:06:25+01:00
+date-modified: 2024-04-17T13:29:04+02:00
 ---
 
 > [!multi-column|center-fixed]
@@ -94,6 +94,19 @@ filter: "#Inbox"
 > > }
 > > dv.table([], projectLinks.map(p => [p]))
 > > ```
+> >
+> > ```meta-bind-button
+> > label: Create Project
+> > icon: ""
+> > hidden: false
+> > class: ""
+> > tooltip: ""
+> > id: ""
+> > style: default
+> > actions:
+> >   - type: js
+> >     file: Scripts/projectCreation.js
+> > ```
 >
 > > [!datalog] ### Areas
 > >
@@ -105,6 +118,19 @@ filter: "#Inbox"
 > > areaLinks.push(dv.fileLink(area.file.path, false, area.area));
 > > }
 > > dv.table([], areaLinks.map(p => [p]))
+> > ```
+> >
+> > ```meta-bind-button
+> > label: Create Area
+> > icon: ""
+> > hidden: false
+> > class: ""
+> > tooltip: ""
+> > id: ""
+> > style: default
+> > actions:
+> >   - type: js
+> >     file: Scripts/areaCreation.js
 > > ```
 
 <br>
