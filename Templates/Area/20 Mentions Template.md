@@ -11,5 +11,5 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 ---
 
 ```query
-#project/<%* tR += tp.file.folder().replaceAll(' ', '-').toLowerCase() %>
+#area/<%* tR += tp.file.folder().replaceAll(' ', '-').toLowerCase() %>
 ```
