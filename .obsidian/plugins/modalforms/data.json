@@ -1,0 +1,91 @@
+{
+  "editorPosition": "right",
+  "attachShortcutToGlobalWindow": false,
+  "globalNamespace": "MF",
+  "formDefinitions": [
+    {
+      "title": "Project Creation",
+      "name": "Project Creation Form",
+      "fields": [
+        {
+          "name": "Project Name",
+          "label": "",
+          "description": "",
+          "isRequired": true,
+          "input": {
+            "type": "text"
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Area Creation",
+      "name": "Area Creation Form",
+      "fields": [
+        {
+          "name": "Area Name",
+          "label": "",
+          "description": "",
+          "isRequired": true,
+          "input": {
+            "type": "text"
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Log Entry",
+      "name": "Log Entry Form",
+      "fields": [
+        {
+          "name": "Title",
+          "label": "",
+          "description": "",
+          "isRequired": true,
+          "input": {
+            "type": "text"
+          }
+        },
+        {
+          "name": "Main Domain",
+          "label": "",
+          "description": "What area pertains the entry to, e.g. Obsidian, Personal, <Company>, Health, etc.",
+          "isRequired": true,
+          "input": {
+            "type": "text"
+          }
+        },
+        {
+          "name": "Sub Domain",
+          "label": "",
+          "description": "What part of the main domain does the entry pertain to, e.g. a project for a specific company, a specific area of your health or your personal life, etc.",
+          "isRequired": false,
+          "input": {
+            "type": "text"
+          }
+        },
+        {
+          "name": "Tags",
+          "label": "",
+          "description": "",
+          "isRequired": true,
+          "input": {
+            "type": "tag"
+          }
+        },
+        {
+          "name": "Content",
+          "label": "",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea"
+          }
+        }
+      ],
+      "version": "1"
+    }
+  ]
+}
