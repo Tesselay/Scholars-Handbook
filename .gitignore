@@ -1,9 +1,9 @@
-!.obsidian/snippets
-!.obsidian/appearance.json
-!.obsidian/app.json
-.obsidian/snippets/test.css
 .trash/*
 .obsidian/Second Brain.code-workspace
-/.obsidian/plugins
 .obsidian/snippets/sandbox.css
 Templates/Template Sandbox.md
+.obsidian/plugins/**/main.js
+.obsidian/plugins/**/manifest.json
+.obsidian/plugins/**/styles.css
+.obsidian/plugins/**/cache.json
+.obsidian/plugins/**/histories.json
