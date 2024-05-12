@@ -1,0 +1,46 @@
+{
+  "settings": {
+    "migrated": 4,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "FasAtom",
+      "FasFileCode",
+      "FasObjectGroup",
+      "FasSpinner",
+      "FasStamp"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": false,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconIdentifier": ":",
+    "iconsInLinksEnabled": true,
+    "debugMode": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor"
+  },
+  "Assets": "FasImages",
+  "Templates": "FasStamp",
+  "00 Journal": "FasBookJournalWhills",
+  "Unordered": "FasSpinner",
+  "20 Area": "FasObjectGroup",
+  "10 Project": "FasFolderPlus",
+  "30 Knowledge": "FasLightbulb",
+  "40 Personalities": "FasPerson",
+  "50 Glossar": "FasBookmark",
+  "60 Dictionary": "FasLanguage",
+  "Scripts": "FasFileCode",
+  "70 Resources": "FasAtom"
+}

@@ -27,9 +27,11 @@
   "widgets",
   "obsidian-git",
   "obsidian-charts",
-  "quickadd",
   "obsidian-meta-bind-plugin",
+  "quickadd",
+  "obsidian-advanced-uri",
   "js-engine",
+  "obsidian-omnivore",
   "modalforms",
-  "obsidian-advanced-uri"
+  "code-styler"
 ]

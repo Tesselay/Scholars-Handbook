@@ -1,0 +1,62 @@
+{
+  "callouts": {
+    "custom": [],
+    "settings": {
+      "evening": [
+        {
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "140, 79, 126"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "140, 79, 126"
+          }
+        }
+      ],
+      "datalog": [
+        {
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "55, 91, 109"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "148, 219, 255"
+          }
+        }
+      ],
+      "transparent": [
+        {
+          "changes": {
+            "color": "255, 255, 255"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidianFallbackForced": false,
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}

@@ -5,7 +5,7 @@
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "defaultViewMode": "preview",
-  "showLineNumber": false,
+  "showLineNumber": true,
   "promptDelete": false,
   "propertiesInDocument": "hidden",
   "newLinkFormat": "absolute"

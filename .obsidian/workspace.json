@@ -17,22 +17,9 @@
                 "file": "Home.md",
                 "mode": "preview",
                 "backlinks": false,
-                "source": true
+                "source": false
               },
               "pinned": true
-            }
-          },
-          {
-            "id": "c1aebc653475f913",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/Journal/00 Journal Template.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
             }
           }
         ]
@@ -90,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "71bc1ed1e945b209",
@@ -263,20 +249,26 @@
       "audio-recorder:Start/stop recording": false,
       "workspaces:Manage workspace layouts": false,
       "breadcrumbs:Breadcrumbs Visualisation": false,
+      "juggl:Juggl global graph": false,
+      "homepage:Open homepage": false,
       "obsidian-custom-frames:Open Todoist": false,
       "obsidian-custom-frames:Open Proton Calendar": false,
-      "homepage:Open homepage": false,
-      "juggl:Juggl global graph": false,
+      "widgets:Add widget": false,
+      "periodic-notes:Open today": false,
+      "templater-obsidian:Templater": false,
       "omnisearch:Omnisearch": false,
       "obsidian-projects:Open projects": false,
-      "templater-obsidian:Templater": false,
-      "widgets:Add widget": false,
-      "periodic-notes:Open today": false
+      "modalforms:Edit forms": false
     }
   },
-  "active": "e913d2f59cf4715c",
+  "active": "9aa9f28e5a89a8a6",
   "lastOpenFiles": [
+    "00 Journal/Entries/2024-05-09 Journal.md",
+    "00 Journal/Periodic/Daily/2024-05-09.md",
     "Home.md",
+    "Templates/Journal/00 Journal Template.md",
+    "Templates/Area/20 Area Charter Template 1.md",
+    "Templates/Template Sandbox.md",
     "00 Journal/Periodic/Daily/YYYY-MM-DD.md",
     "00 Journal/Entries/YYYY-MM-DD Journal.md",
     "00 Journal/Periodic/Daily/2024-03-08.md",

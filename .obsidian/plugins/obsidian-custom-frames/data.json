@@ -1,0 +1,27 @@
+{
+  "frames": [
+    {
+      "url": "https://todoist.com",
+      "displayName": "Todoist",
+      "icon": "list-checks",
+      "hideOnMobile": true,
+      "addRibbonIcon": true,
+      "openInCenter": true,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": "/* hide the help, home, search, and productivity overview buttons, create extra space, and prevent toast pop-up from acting weird */\n[aria-label=\"Go to Home view\"], #quick_find, [aria-label=\"Productivity\"], [aria-label=\"Help & Feedback\"] {\n\tdisplay: none !important;\n}\n\n.view_content {\n\tpadding-left: 15px;\n}\n\n.view_header {\n\tpadding-left: 15px;\n\tpadding-top: 10px;\n}\n\n.undo_toast {\n\twidth: 95%;\n}"
+    },
+    {
+      "url": "https://calendar.proton.me/",
+      "displayName": "Proton Calendar",
+      "icon": "mail",
+      "hideOnMobile": false,
+      "addRibbonIcon": true,
+      "openInCenter": true,
+      "zoomLevel": 1,
+      "forceIframe": false,
+      "customCss": ".topnav-container, .sidebar, .app-infos {\nvisibility: hidden;\nposition: absolute;\n}"
+    }
+  ],
+  "padding": 5
+}
