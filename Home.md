@@ -1,10 +1,10 @@
 ---
-parent: 
 title: Home
+parent: 
+date-created: 2023-11-22T22:51:53+01:00
+date-modified: 2024-05-13T19:56:35+02:00
 cssclasses:
   - line2
-date-created: 2023-11-22T22:51:53+01:00
-date-modified: 2024-04-17T13:29:04+02:00
 ---
 
 > [!multi-column|center-fixed]
@@ -89,7 +89,7 @@ filter: "#Inbox"
 > >
 > > ```dataviewjs
 > > let projectLinks = [];
-> > for (let project of dv.pages('"10 Project"').where(p => p.file.name.includes("+MOC"))) {
+> > for (let project of dv.pages('"10 Project"').where(p => p.file.name.includes("Charter"))) {
 > > projectLinks.push(dv.fileLink(project.file.path, false, project.project));
 > > }
 > > dv.table([], projectLinks.map(p => [p]))
@@ -114,7 +114,7 @@ filter: "#Inbox"
 > >
 > > ```dataviewjs
 > > let areaLinks = [];
-> > for (let area of dv.pages('"20 Area"').where(p => p.file.name.includes("+MOC"))) {
+> > for (let area of dv.pages('"20 Area"').where(p => p.file.name.includes("Charter"))) {
 > > areaLinks.push(dv.fileLink(area.file.path, false, area.area));
 > > }
 > > dv.table([], areaLinks.map(p => [p]))
