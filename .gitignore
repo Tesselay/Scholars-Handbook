@@ -7,3 +7,4 @@ Templates/Template Sandbox.md
 .obsidian/plugins/**/styles.css
 .obsidian/plugins/**/cache.json
 .obsidian/plugins/**/histories.json
+Scripts/test.js
