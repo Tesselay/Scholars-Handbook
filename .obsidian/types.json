@@ -6,6 +6,12 @@
     "sources": "multitext",
     "type": "text",
     "up": "text",
-    "same": "multitext"
+    "same": "multitext",
+    "date-created": "datetime",
+    "date-modified": "datetime",
+    "date": "date",
+    "sleep-rating": "number",
+    "song-of-the-day": "text",
+    "gratitudes": "multitext"
   }
 }
