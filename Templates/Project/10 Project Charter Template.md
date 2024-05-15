@@ -37,7 +37,7 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 
 #### Project Purpose:
 
-<%* const modalForm = app.plugins.plugins.modalforms.api; const result = await modalForm.openForm('Area Creation Form'); tR += result.asFrontmatterString(); -%>
+Lorem ipsum
 
 > [!multi-column|clear]
 >
@@ -48,6 +48,8 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 > > [!blank]
 > > #### Scope:
 > > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+---
 
 ```meta-bind-button
 label: Open Project Page
