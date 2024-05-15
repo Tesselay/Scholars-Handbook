@@ -1,21 +1,13 @@
 {
   "version": 2,
-  "projects": [
-  ],
+  "projects": [],
   "archives": [],
   "preferences": {
     "projectSizeLimit": 1000,
     "frontmatter": {
       "quoteStrings": "PLAIN"
     },
-    "commands": [
-      {
-        "project": "3824493f-6d8e-470a-8d3e-296a8a525682"
-      },
-      {
-        "project": "e297f0fe-f9dd-4c6e-a2b6-42e15e3f0291"
-      }
-    ],
+    "commands": [],
     "linkBehavior": "open-editor"
   }
 }
