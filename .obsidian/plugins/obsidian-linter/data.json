@@ -18,7 +18,7 @@
       "enabled": false,
       "alias-key": true,
       "tag-key": true,
-      "default-array-style": "single-line",
+      "default-array-style": "multi-line",
       "default-array-keys": true,
       "force-single-line-array-style": "",
       "force-multi-line-array-style": ""
@@ -28,7 +28,7 @@
       "text-to-insert": "parent:\ntitle:"
     },
     "move-tags-to-yaml": {
-      "enabled": false,
+      "enabled": true,
       "how-to-handle-existing-tags": "Nothing",
       "tags-to-ignore": ""
     },
@@ -54,7 +54,7 @@
     "yaml-title": {
       "enabled": true,
       "title-key": "title",
-      "mode": "first-h1-or-filename-if-h1-missing"
+      "mode": "filename"
     },
     "yaml-title-alias": {
       "enabled": false,
