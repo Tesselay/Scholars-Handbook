@@ -1,6 +1,6 @@
 {
   "attachmentFolderPath": "Assets",
-  "livePreview": false,
+  "livePreview": true,
   "showInlineTitle": false,
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
