@@ -17,7 +17,7 @@
                 "file": "Home.md",
                 "mode": "preview",
                 "backlinks": false,
-                "source": false
+                "source": true
               },
               "pinned": true
             }
@@ -137,22 +137,6 @@
               "type": "calendar",
               "state": {}
             }
-          },
-          {
-            "id": "815b9cd930468fbf",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_nodes",
-              "state": {}
-            }
-          },
-          {
-            "id": "2e67be77d63ee078",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_style",
-              "state": {}
-            }
           }
         ]
       },
@@ -249,19 +233,20 @@
       "audio-recorder:Start/stop recording": false,
       "workspaces:Manage workspace layouts": false,
       "breadcrumbs:Breadcrumbs Visualisation": false,
-      "juggl:Juggl global graph": false,
-      "homepage:Open homepage": false,
       "obsidian-custom-frames:Open Todoist": false,
       "obsidian-custom-frames:Open Proton Calendar": false,
-      "widgets:Add widget": false,
+      "homepage:Open homepage": false,
+      "juggl:Juggl global graph": false,
       "periodic-notes:Open today": false,
-      "templater-obsidian:Templater": false,
       "omnisearch:Omnisearch": false,
       "obsidian-projects:Open projects": false,
+      "templater-obsidian:Templater": false,
+      "widgets:Add widget": false,
+      "obsidian-omnivore:Omnivore": false,
       "modalforms:Edit forms": false
     }
   },
-  "active": "9aa9f28e5a89a8a6",
+  "active": "f4db2d5926ba2d18",
   "lastOpenFiles": [
     "00 Journal/Entries/2024-05-09 Journal.md",
     "00 Journal/Periodic/Daily/2024-05-09.md",
