@@ -13,7 +13,6 @@
   "highlightr-plugin",
   "homepage",
   "juggl",
-  "obsidian-linter",
   "metadata-menu",
   "omnisearch",
   "periodic-notes",
@@ -33,5 +32,7 @@
   "js-engine",
   "obsidian-omnivore",
   "modalforms",
-  "code-styler"
+  "code-styler",
+  "obsidian-linter",
+  "obsidian-tasks-plugin"
 ]
