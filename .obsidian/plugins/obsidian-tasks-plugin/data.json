@@ -3,7 +3,7 @@
   "globalFilter": "",
   "removeGlobalFilter": true,
   "taskFormat": "dataview",
-  "setCreatedDate": true,
+  "setCreatedDate": false,
   "setDoneDate": true,
   "setCancelledDate": true,
   "autoSuggestInEditor": true,
