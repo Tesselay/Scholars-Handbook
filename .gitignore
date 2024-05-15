@@ -8,3 +8,4 @@ Templates/Template Sandbox.md
 .obsidian/plugins/**/cache.json
 .obsidian/plugins/**/histories.json
 Scripts/test.js
+/.obsidian/themes
