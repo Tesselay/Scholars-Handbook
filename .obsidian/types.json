@@ -4,7 +4,7 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "sources": "multitext",
-    "type": "text",
+    "type": "multitext",
     "up": "text",
     "same": "multitext",
     "date-created": "datetime",
