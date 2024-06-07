@@ -39,7 +39,8 @@ INPUT[list(placeholder(Today I achieved...)):achievements]
 #### Habits
 ```tasks
 tag includes #habit  
-scheduled on <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>
+(has due date) AND (not done) 
+hide backlink
 ```
 
 #### Day Rating
