@@ -10,7 +10,7 @@ cssclasses:
 sleep-rating: 
 ---
 
-# <% tp.file.title %>
+# Morning Log
 
 #tag
 

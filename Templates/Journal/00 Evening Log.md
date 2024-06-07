@@ -12,7 +12,7 @@ gratitudes:
 achievements:
 ---
 
-# <% tp.file.title %>
+# Evening Log
 
 #tag
 
