@@ -4,7 +4,7 @@
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
     "format": "",
-    "template": "Templates/Journal/00 Daily Note Template.md",
+    "template": "Templates/Journal/00 Daily Note.md",
     "folder": "00 Journal/Periodic/Daily",
     "enabled": true
   },
