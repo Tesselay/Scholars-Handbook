@@ -7,13 +7,13 @@ const activeNote = app.workspace.activeLeaf.view.file;
 
 (async () => {
 	const dreamTitle = await app.plugins.getPlugin('quickadd').api.inputPrompt(header = 'Dream Title', placeholder = 'Choose a fitting title for your dream');
-	templater.templater.create_new_note_from_template(dreamTemplate, entryFolder, `${activeNote.basename} Dream - ${dreamTitle}`, false);
+	templater.templater.create_new_note_from_template(dreamTemplate, entryFolder, `${activeNote.basename} Dream - ${dreamTitle}`, true);
 
 	const content = await this.app.vault.read(activeNote);
 	const lines = content.split('\n');
 
 	const buttonLastLine = 'label: Add Dream'
-	const dreamEmbed = `![[${activeNote.basename} Dream - ${dreamTitle}]]\n`;
+	const dreamEmbed = `> > ![[${activeNote.basename} Dream - ${dreamTitle}]]\n> >`;
 	let lineIndex = -1;
 
 	for (let i = 0; i < lines.length; i++) {
