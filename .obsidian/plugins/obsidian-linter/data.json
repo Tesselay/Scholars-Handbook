@@ -34,7 +34,7 @@
     },
     "remove-yaml-keys": {
       "enabled": true,
-      "yaml-keys-to-remove": "banner:\nbanner_y:\nbanner_x:\ndate modified:\ndate created:"
+      "yaml-keys-to-remove": ""
     },
     "yaml-key-sort": {
       "enabled": true,
