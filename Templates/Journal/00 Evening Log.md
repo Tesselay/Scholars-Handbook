@@ -3,7 +3,6 @@ title:
 type: log
 date: <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>
 tags:
-  - tag
 parent: '[[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]'
 date-created: 
 date-modified: 
@@ -13,7 +12,7 @@ gratitudes:
 achievements:
 ---
 
-# <% tp.file.title %> Evening Log
+# <% tp.file.title %>
 
 #tag
 

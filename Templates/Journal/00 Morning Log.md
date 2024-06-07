@@ -1,9 +1,8 @@
 ---
-title: 2024-05-15 Morning Log
+title: 
 type: log
-date: <% tp.file.title %>
+date: <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>
 tags:
-  - tag
 parent: '[[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]'
 date-created: 
 date-modified: 
@@ -11,7 +10,7 @@ cssclasses:
 sleep-rating: 
 ---
 
-# <% tp.file.title %> Morning Log
+# <% tp.file.title %>
 
 #tag
 
