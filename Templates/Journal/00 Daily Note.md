@@ -51,14 +51,10 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 
 ```meta-bind-button
 label: Add Dream
-style: default
+style: primary
 actions:
-  - type: templaterCreateNote
-    templateFile: Templates/Journal/00 Dream.md
-    folderPath: 00 Journal/Entries/Dreams
-    fileName: ""
-    openNote: true
-
+  - type: js
+    file: Scripts/addDream.js
 ```
 
 ## Daily Meta
