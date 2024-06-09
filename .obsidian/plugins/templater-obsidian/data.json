@@ -35,7 +35,7 @@
       "template": "Templates/Journal/00 Dream.md"
     },
     {
-      "folder": "00 Journal/Entries",
+      "folder": "00 Journal/Entries/Logs",
       "template": "Templates/Journal/00 Log.md"
     }
   ],

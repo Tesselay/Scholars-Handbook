@@ -1,7 +1,7 @@
 ---
 title: 
 type: log
-date: <% tp.file.title %>
+date: <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>
 sources:
 tags:
 parent: '[[<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>]]'
@@ -10,9 +10,9 @@ date-modified:
 cssclasses: 
 ---
 
-# <% tp.file.title %> Log:
+## <% tp.file.title.split(' - ')[1] %>
 
-#tag
+#log
 
 > [!m-callout]
 > Takeaway
