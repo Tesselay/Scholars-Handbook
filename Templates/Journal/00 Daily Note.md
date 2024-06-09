@@ -69,6 +69,28 @@ actions:
     file: Scripts/addLog.js
 ```
 
+```js-engine
+const dv = app.plugins.getPlugin('dataview').api;
+const pages = dv.pages('"00 Journal/Entries/Logs"').where(p => p.file.frontmatter.date == '<% tp.file.title %>' && p.file.name).sort((a) => a.file.frontmatter.date);
+
+let markdownBuilder = engine.markdown.createBuilder()
+let multiColumnCallout = markdownBuilder.createCallout('', 'multi-column')
+let columnCalloutLeft = multiColumnCallout.createCallout('', 'blank')
+let columnCalloutRight = multiColumnCallout.createCallout('', 'blank')
+pages.forEach(p => {
+	const filePath = p.file.path.split('.')[0];
+	if ( pages.indexOf(p) % 2 == 0 ) {
+		columnCalloutLeft.createParagraph(`[[${filePath}|${p.file.name}]]\n![[${filePath}]]`)
+		columnCalloutLeft.createParagraph('---');
+	} else {
+		columnCalloutRight.createParagraph(`[[${filePath}|${p.file.name}]]\n![[${filePath}]]`)
+		columnCalloutRight.createParagraph('---');
+	}
+})
+
+return markdownBuilder
+```
+
 ## Daily Meta
 
 > [!multi-column]
