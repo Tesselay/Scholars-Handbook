@@ -57,6 +57,18 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 > > [!blank]
 > > ![[00 Journal/Entries/Evening/<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %> Evening Log|<% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %> Evening Log]]
 
+---
+
+# Logs
+
+```meta-bind-button
+label: Create New Entry
+style: primary
+actions:
+  - type: js
+    file: Scripts/addLog.js
+```
+
 ## Daily Meta
 
 > [!multi-column]
