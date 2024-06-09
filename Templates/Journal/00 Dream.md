@@ -25,6 +25,6 @@ date-modified:
 cssclasses: 
 ---
 
-# <% tp.file.title %>
+## <% tp.file.title.split(' - ')[1] %>
 
-#tag
+#dream
