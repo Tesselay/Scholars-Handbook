@@ -52,7 +52,7 @@
   "rlLeaf": true,
   "showAllPathsIfNoneToIndexNote": false,
   "showAllAliases": true,
-  "showBCs": true,
+  "showBCs": false,
   "showBCsInEditLPMode": false,
   "showRefreshNotice": true,
   "showImpliedRelations": true,
