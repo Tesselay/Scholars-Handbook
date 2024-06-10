@@ -2,7 +2,6 @@
   "accentColor": "",
   "theme": "obsidian",
   "enabledCssSnippets": [
-    "callouts_glow-disable",
     "embed_clean-embed",
     "infobox",
     "MCL Multi Column",
@@ -14,16 +13,18 @@
     "extended-colorschemes",
     "custom_colors",
     "test",
-    "callouts_customized",
     "sandbox",
-    "metabind-list-width-fix"
+    "metabind-list-width-fix",
+    "callouts_glow-disable",
+    "callouts_customized",
+    "minimal_callout"
   ],
   "cssTheme": "AnuPpuccin",
-  "baseFontSize": 15,
+  "baseFontSize": 16,
   "nativeMenus": false,
   "translucency": false,
   "interfaceFontFamily": "Overpass,Fira Sans",
   "textFontFamily": "Rubik,Fira Sans",
   "monospaceFontFamily": "Noto Serif,Fira Code",
-  "showViewHeader": true
+  "showViewHeader": false
 }
