@@ -59,6 +59,28 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 
 ---
 
+# Todo's
+
+```meta-bind-button
+label: Add Task
+icon: ""
+hidden: false
+class: ""
+tooltip: ""
+id: ""
+style: primary
+actions:
+  - type: command
+    command: obsidian-tasks-plugin:edit-task
+```
+
+```tasks
+tag does not include #habit
+(due <% tp.file.title %>) OR (scheduled <% tp.file.title %>) OR ((has start date) AND (starts on or before <% tp.file.title %>) AND NOT (scheduled after <% tp.file.title %>) AND NOT ((due before <% tp.file.title %>) OR (scheduled before <% tp.file.title %>)))
+```
+
+---
+
 # Logs
 
 ```meta-bind-button
