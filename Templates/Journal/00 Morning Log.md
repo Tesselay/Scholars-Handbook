@@ -24,7 +24,19 @@ INPUT[progressBar(addLabels, minValue(0), maxValue(10), title(Sleep Rating)):sle
 
 <br>
 
-#### Want to schedule tasks for today?
+#### Want to add or schedule tasks for today?
+
+```meta-bind-button
+label: Add Task
+hidden: false
+style: default
+actions:
+  - type: js
+    file: Scripts/addTask.js
+```
+
+
+##### Unscheduled or Overdue
 
 ```tasks
 not done

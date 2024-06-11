@@ -63,16 +63,13 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 
 ```meta-bind-button
 label: Add Task
-icon: ""
 hidden: false
-class: ""
-tooltip: ""
-id: ""
-style: primary
+style: default
 actions:
-  - type: command
-    command: obsidian-tasks-plugin:edit-task
+  - type: js
+    file: Scripts/addTask.js
 ```
+
 
 ```tasks
 tag does not include #habit
