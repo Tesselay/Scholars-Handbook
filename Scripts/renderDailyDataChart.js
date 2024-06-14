@@ -6,11 +6,12 @@ function getPageData(firstWeekday, lastWeekDay) {
 		  .where(p => p.file.frontmatter.date >= firstWeekday && p.file.frontmatter.date <= lastWeekDay)
 		  .sort((a) => a.file.frontmatter.date);
 	
+	const dailyPages = getPages('"00 Journal/Periodic/Daily"');
 	const morningPages = getPages('"00 Journal/Entries/Morning"');
 	const eveningPages = getPages('"00 Journal/Entries/Evening"');
 	const dreamPages = getPages('"00 Journal/Entries/Dreams"');
 	
-	const pageDates = morningPages.map(p => p.file.frontmatter.date).values;
+	const pageDates = dailyPages.map(p => p.file.frontmatter.date).values;
 	const pageSleepRatings = morningPages.map(p => p['sleep-rating']).values;
 	const pageDayRatings = eveningPages.map(p => p['day-rating']).values;
 	
