@@ -67,7 +67,7 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 
 ```js-engine
 const firstWeekDay = <% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>;
-const lastWeekDay = <% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>;
+const lastWeekDay = <% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>;
 
 const chartRenderer = await engine.importJs('Scripts/renderDailyDataChart.js');
 return chartRenderer.renderChart(firstWeekDay, lastWeekDay, container);             
