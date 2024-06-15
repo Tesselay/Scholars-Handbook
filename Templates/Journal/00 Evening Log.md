@@ -22,7 +22,7 @@ Text
 
 #### Song of the day
 
-(log-song-of-the-day::)
+log-song-of-the-day::
 
 #### Gratitude Journal
 
