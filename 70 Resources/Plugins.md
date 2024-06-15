@@ -4,6 +4,8 @@ parent:
 date-created: 2024-06-15T18:22:20+02:00
 date-modified: 2024-06-15T18:41:25+02:00
 ---
+> [!info]
+> Settings for all plugins are included but they still need to be downloaded. 
 
 #### Essential
 
