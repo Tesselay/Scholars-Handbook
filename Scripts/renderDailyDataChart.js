@@ -1,16 +1,18 @@
-function getPageData(firstWeekday, lastWeekDay) {
+function getPagesOfWeek(firstWeekDay, lastWeekDay, path) {
 	const dv = app.plugins.getPlugin('dataview').api;
 
-	const getPages = (path) => 
-		dv.pages(path)
-		  .where(p => p.file.frontmatter.date >= firstWeekday && p.file.frontmatter.date <= lastWeekDay)
+	return dv.pages(path)
+		  .where(p => p.file.frontmatter.date >= firstWeekDay && p.file.frontmatter.date <= lastWeekDay)
 		  .sort((a) => a.file.frontmatter.date);
-	
-	const dailyPages = getPages('"00 Journal/Periodic/Daily"');
-	const morningPages = getPages('"00 Journal/Entries/Morning"');
-	const eveningPages = getPages('"00 Journal/Entries/Evening"');
-	const dreamPages = getPages('"00 Journal/Entries/Dreams"');
-	
+}
+
+function generateChartData(firstWeekDay, lastWeekDay) {
+
+	const dailyPages = getPagesOfWeek(firstWeekDay, lastWeekDay, '"00 Journal/Periodic/Daily"');
+	const morningPages = getPagesOfWeek(firstWeekDay, lastWeekDay, '"00 Journal/Entries/Morning"');
+	const eveningPages = getPagesOfWeek(firstWeekDay, lastWeekDay, '"00 Journal/Entries/Evening"');
+	const dreamPages = getPagesOfWeek(firstWeekDay, lastWeekDay, '"00 Journal/Entries/Dreams"');
+
 	const pageDates = dailyPages.map(p => p.file.frontmatter.date).values;
 	const pageSleepRatings = morningPages.map(p => p['sleep-rating']).values;
 	const pageDayRatings = eveningPages.map(p => p['day-rating']).values;
@@ -19,12 +21,6 @@ function getPageData(firstWeekday, lastWeekDay) {
 	  .map(p => p.rows.filter(e => e['nightmare'] === true))
 	  .map(p => p.length)
 	  .array();
-
-	return [pageDates, pageSleepRatings, pageDayRatings, pageNightmares];
-}
-
-function generateChartData(pageData) {
-	const [pageDates, pageSleepRatings, pageDayRatings, pageNightmares] = pageData;
 
 	const chartData = {
 		data: {
@@ -91,8 +87,7 @@ function generateChartData(pageData) {
 }
 
 export function renderChart(firstWeekday, lastWeekDay, container) {
-	const pageData = getPageData(firstWeekday, lastWeekDay);
-	const chartData = generateChartData(pageData);
+	const chartData = generateChartData(firstWeekday, lastWeekDay);
 	window.renderChart(chartData, container);
 }
 
