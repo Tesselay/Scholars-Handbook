@@ -15,16 +15,28 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "00 Journal/Entries",
-      "template": "Templates/Journal/00 Journal Template.md"
-    },
-    {
       "folder": "00 Journal/Periodic/Daily",
-      "template": "Templates/Journal/00 Daily Note Template.md"
+      "template": "Templates/Journal/00 Daily Note.md"
     },
     {
       "folder": "00 Journal/Periodic/Weekly",
-      "template": "Templates/Journal/00 Weekly Note Template.md"
+      "template": "Templates/Journal/00 Weekly Note.md"
+    },
+    {
+      "folder": "00 Journal/Entries/Morning",
+      "template": "Templates/Journal/00 Morning Log.md"
+    },
+    {
+      "folder": "00 Journal/Entries/Evening",
+      "template": "Templates/Journal/00 Evening Log.md"
+    },
+    {
+      "folder": "00 Journal/Entries/Dreams",
+      "template": "Templates/Journal/00 Dream.md"
+    },
+    {
+      "folder": "00 Journal/Entries/Logs",
+      "template": "Templates/Journal/00 Log.md"
     }
   ],
   "syntax_highlighting": true,
