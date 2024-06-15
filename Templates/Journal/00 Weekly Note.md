@@ -65,74 +65,53 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 
 ## Data
 
-```js-engine
-const firstWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>';
-const lastWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>';
-
-const chartRenderer = await engine.importJs('Scripts/renderDailyDataChart.js');
-return chartRenderer.renderChart(firstWeekDay, lastWeekDay, container);             
-```   
-
-```js-engine
-const firstWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>';
-const lastWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>';
-
-const chartRenderer = await engine.importJs('Scripts/renderHabitChart.js');
-return chartRenderer.renderChart(firstWeekDay, lastWeekDay, container);         
-```
+> [!multi-column]
+> > [!blank]
+> > ```js-engine
+> > const firstWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>';
+> > const lastWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>';
+> > 
+> > const chartRenderer = await engine.importJs('Scripts/renderDailyDataChart.js');
+> > return chartRenderer.renderChart(firstWeekDay, lastWeekDay, container);             
+> > ```   
+>
+> > [!blank]
+> > ```js-engine
+> > const firstWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>';
+> > const lastWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>';
+> > 
+> > const chartRenderer = await engine.importJs('Scripts/renderHabitChart.js');
+> > return chartRenderer.renderChart(firstWeekDay, lastWeekDay, container);         
+> > ```
 
 ## Songs of the Week
 
 ```dataview
 LIST log-song-of-the-day
-FROM "00 Journal/Entries"
+FROM "00 Journal/Entries/Evening"
 WHERE log-song-of-the-day AND date >= date("<% tp.date.weekday('YYYY-MM-DD',  0, tp.file.title, 'YYYY-[W]ww') %>")  AND date <= date("<% tp.date.weekday('YYYY-MM-DD',  6, tp.file.title, 'YYYY-[W]ww') %>")
-```
-
-## Learned
-
-```dataview
-LIST log-learned-today 
-FROM "00 Journal/Entries"
-WHERE log-learned-today AND date >= date("<% tp.date.weekday('YYYY-MM-DD',  0, tp.file.title, 'YYYY-[W]ww') %>")  AND date <= date("<% tp.date.weekday('YYYY-MM-DD',  6, tp.file.title, 'YYYY-[W]ww') %>")
 ```
 
 ## Logs
 
-> [!multi-column]
->
-> > [!blank]
-> > #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %> Journal|Monday <% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>]]
-> > ![[<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
->
-> > [!blank]
-> > #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD", 1, tp.file.title, "YYYY-[W]ww") %> Journal|Tuesday <% tp.date.weekday("YYYY-MM-DD", 1, tp.file.title, "YYYY-[W]ww") %>]]
-> > ![[<% tp.date.weekday("YYYY-MM-DD", 1, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
+```js-engine
+const dv = app.plugins.getPlugin('dataview').api;
+const pages = dv.pages('"00 Journal/Entries/Logs"').where(p => p.file.frontmatter.date >= '<% tp.date.weekday('YYYY-MM-DD',  0, tp.file.title, 'YYYY-[W]ww') %>' && p.file.frontmatter.date <= '<% tp.date.weekday('YYYY-MM-DD',  6, tp.file.title, 'YYYY-[W]ww') %>')
 
-> [!multi-column]
->
-> > [!blank]
-> > #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD", 2, tp.file.title, "YYYY-[W]ww") %> Journal|Wednesday <% tp.date.weekday("YYYY-MM-DD", 2, tp.file.title, "YYYY-[W]ww") %>]]
-> > ![[<% tp.date.weekday("YYYY-MM-DD", 2, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
->
-> > [!blank]
-> > #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD", 3, tp.file.title, "YYYY-[W]ww") %> Journal|Thursday <% tp.date.weekday("YYYY-MM-DD", 3, tp.file.title, "YYYY-[W]ww") %>]]
-> > ![[<% tp.date.weekday("YYYY-MM-DD", 3, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
+let markdownBuilder = engine.markdown.createBuilder()
+let multiColumnCallout = markdownBuilder.createCallout('', 'multi-column')
+let columnCalloutLeft = multiColumnCallout.createCallout('', 'blank')
+let columnCalloutRight = multiColumnCallout.createCallout('', 'blank')
+pages.forEach(p => {
+	const filePath = p.file.path.split('.')[0];
+	if ( pages.indexOf(p) % 2 == 0 ) {
+		columnCalloutLeft.createParagraph(`[[${filePath}|${p.file.name}]]\n${p.takeaway}`);
+		columnCalloutLeft.createParagraph('---');
+	} else {
+		columnCalloutRight.createParagraph(`[[${filePath}|${p.file.name}]]\n${p.takeaway}`);
+		columnCalloutRight.createParagraph('---');
+	}
+})
 
-> [!multi-column]
->
-> > [!blank]
-> > #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD", 5, tp.file.title, "YYYY-[W]ww") %> Journal|Friday <% tp.date.weekday("YYYY-MM-DD", 4, tp.file.title, "YYYY-[W]ww") %>]]
-> > ![[<% tp.date.weekday("YYYY-MM-DD", 4, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
->
-> > [!blank]
-> > #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD", 5, tp.file.title, "YYYY-[W]ww") %> Journal|Saturday <% tp.date.weekday("YYYY-MM-DD", 5, tp.file.title, "YYYY-[W]ww") %>]]
-> > ![[<% tp.date.weekday("YYYY-MM-DD", 5, tp.file.title, "YYYY-[W]ww") %> Journal#Logs]]
-
-> [!multi-column]
->
-> > [!blank]
-> > #### [[00 Journal/Entries/<% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %> Journal|Sunday <% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>]]
-> > ![[<% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>Journal#Logs]]
->
-> > [!blank]
+return markdownBuilder
+```
