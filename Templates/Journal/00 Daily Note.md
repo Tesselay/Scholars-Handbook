@@ -110,6 +110,8 @@ pages.forEach(p => {
 return markdownBuilder
 ```
 
+---
+
 ## Daily Meta
 
 > [!multi-column]
