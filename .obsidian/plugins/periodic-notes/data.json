@@ -4,19 +4,19 @@
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
     "format": "",
-    "template": "Templates/Journal/00 Daily Note.md",
+    "template": "70 Resources/Templates/Journal/00 Daily Note.md",
     "folder": "00 Journal/Periodic/Daily",
     "enabled": true
   },
   "weekly": {
     "format": "",
-    "template": "Templates/Journal/00 Weekly Note.md",
+    "template": "70 Resources/Templates/Journal/00 Weekly Note.md",
     "folder": "00 Journal/Periodic/Weekly",
     "enabled": true
   },
   "monthly": {
     "format": "",
-    "template": "Templates/Journal/00 Monthly Note Templa",
+    "template": "70 Resources/Templates/Journal/00 Monthly Note Templa",
     "folder": "",
     "enabled": false
   },

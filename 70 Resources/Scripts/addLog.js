@@ -1,6 +1,6 @@
 const templater = app.plugins.getPlugin('templater-obsidian');
 
-const logTemplate = app.vault.getFileByPath('Templates/Journal/00 Log.md');
+const logTemplate = app.vault.getFileByPath('70 Resources/Templates/Journal/00 Log.md');
 const entryFolder = app.vault.getFolderByPath('00 Journal/Entries/Logs')
 
 const activeNote = app.workspace.activeLeaf.view.file;
