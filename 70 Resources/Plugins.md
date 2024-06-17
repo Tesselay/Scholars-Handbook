@@ -2,8 +2,10 @@
 title: Plugins
 parent: 
 date-created: 2024-06-15T18:22:20+02:00
-date-modified: 2024-06-15T18:41:25+02:00
+date-modified: 2024-06-17T18:31:40+02:00
 ---
+> [!info]
+> Settings for all plugins mentioned are already provided but the plugins itself still need to be downloaded.  
 
 #### Essential
 
