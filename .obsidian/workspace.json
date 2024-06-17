@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9aa9f28e5a89a8a6",
+            "id": "2c8bb5dfe54742a6",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -16,13 +16,40 @@
               "state": {
                 "file": "Home.md",
                 "mode": "preview",
-                "backlinks": false,
-                "source": true
+                "backlinks": true,
+                "source": false
               },
               "pinned": true
             }
+          },
+          {
+            "id": "242b1a2f894db87e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "70 Resources/Habits.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "57229541d39a12d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "70 Resources/Plugins.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -34,7 +61,7 @@
       {
         "id": "37d0569bb3966295",
         "type": "tabs",
-        "dimension": 58.84615384615385,
+        "dimension": 58.76393110435664,
         "children": [
           {
             "id": "f4db2d5926ba2d18",
@@ -70,29 +97,6 @@
             }
           },
           {
-            "id": "e913d2f59cf4715c",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
-        "id": "71bc1ed1e945b209",
-        "type": "tabs",
-        "dimension": 41.15384615384615,
-        "children": [
-          {
-            "id": "cfaf1ca9fc9baaad",
-            "type": "leaf",
-            "state": {
-              "type": "dictionary-view",
-              "state": {}
-            }
-          },
-          {
             "id": "3318c82681867509",
             "type": "leaf",
             "state": {
@@ -116,34 +120,11 @@
             }
           }
         ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 300
-  },
-  "right": {
-    "id": "50862e34d566c95b",
-    "type": "split",
-    "children": [
-      {
-        "id": "84cdf220094229ad",
-        "type": "tabs",
-        "dimension": 31.796349663784824,
-        "children": [
-          {
-            "id": "a025fef5603b91f2",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          }
-        ]
       },
       {
-        "id": "a5311227bcc17735",
+        "id": "20baab260b630edd",
         "type": "tabs",
-        "dimension": 25.840537944284343,
+        "dimension": 41.23606889564336,
         "children": [
           {
             "id": "b5583a83e96ade3b",
@@ -161,13 +142,35 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "50862e34d566c95b",
+    "type": "split",
+    "children": [
+      {
+        "id": "84cdf220094229ad",
+        "type": "tabs",
+        "dimension": 32.5,
+        "children": [
+          {
+            "id": "a025fef5603b91f2",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
       },
       {
         "id": "1f9f198a6abde7fc",
         "type": "tabs",
-        "dimension": 42.363112391930834,
+        "dimension": 67.5,
         "children": [
           {
             "id": "a5c13dcf7f820fc4",
@@ -175,7 +178,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Home.md"
+                "file": "70 Resources/Plugins.md"
               }
             }
           },
@@ -185,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home.md"
+                "file": "70 Resources/Plugins.md"
               }
             }
           },
@@ -195,7 +198,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home.md",
+                "file": "70 Resources/Plugins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +215,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Home.md",
+                "file": "70 Resources/Plugins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -236,37 +239,52 @@
       "obsidian-custom-frames:Open Todoist": false,
       "obsidian-custom-frames:Open Proton Calendar": false,
       "homepage:Open homepage": false,
-      "juggl:Juggl global graph": false,
+      "obsidian-omnivore:Omnivore": false,
       "periodic-notes:Open today": false,
-      "omnisearch:Omnisearch": false,
       "obsidian-projects:Open projects": false,
       "templater-obsidian:Templater": false,
       "widgets:Add widget": false,
-      "obsidian-omnivore:Omnivore": false,
-      "modalforms:Edit forms": false
+      "callout-manager:Insert Callout": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "f4db2d5926ba2d18",
+  "active": "57229541d39a12d8",
   "lastOpenFiles": [
-    "00 Journal/Entries/2024-05-09 Journal.md",
-    "00 Journal/Periodic/Daily/2024-05-09.md",
+    "70 Resources/Habits.md",
+    "70 Resources/Plugins.md",
     "Home.md",
-    "Templates/Journal/00 Journal Template.md",
-    "Templates/Area/20 Area Charter Template 1.md",
-    "Templates/Template Sandbox.md",
-    "00 Journal/Periodic/Daily/YYYY-MM-DD.md",
-    "00 Journal/Entries/YYYY-MM-DD Journal.md",
-    "00 Journal/Periodic/Daily/2024-03-08.md",
-    "30 Knowledge/Example Domain/Example Domain MOC.md",
-    "10 Project/Example Project/EP Tasks.md",
-    "10 Project/Example Project/EP Mentions.md",
-    "10 Project/Example Project/EP Charter.md",
-    "10 Project/Example Project/EP +MOC.md",
-    "10 Project/Project Dashboard.md",
-    "20 Area/Area Dashboard.md",
-    "20 Area/Example Area/Projects/Project.md",
-    "20 Area/Example Area/EA +MOC.md",
-    "20 Area/Example Area/EA Mentions.md",
-    "20 Area/Example Area/EA Tasks.md"
+    "00 Journal/Periodic/Daily/2024-06-17.md",
+    "70 Resources/Templates/Journal/00 Daily Note.md",
+    "70 Resources/Templates/Journal/Dataview Entries/01 Learned Today Term Topic.md",
+    "70 Resources/Templates/Journal/Dataview Entries/01 Learned Today Translation.md",
+    "70 Resources/Templates/Journal/Dataview Entries/01 Song of the Day.md",
+    "90 Sandbox",
+    "70 Resources/Templates/Journal/Dataview Entries/01 Learned Today Knowledge.md",
+    "70 Resources/Templates/Journal/Dataview Entries/01 Habit.md",
+    "70 Resources/Templates/Project/10 Tasks Template.md",
+    "70 Resources/Templates/Project/10 Sources Template.md",
+    "70 Resources/Templates/Project/10 Project Charter Template.md",
+    "70 Resources/Templates/Knowledge/30 Knowledge MOC Template.md",
+    "70 Resources/Templates/Knowledge/30 Basic Knowledge Template.md",
+    "70 Resources/Templates/Journal/Dataview Entries",
+    "70 Resources/Templates/Journal/00 Weekly Note.md",
+    "70 Resources/Templates/Journal/00 Morning Log.md",
+    "70 Resources/Templates/Journal/00 Log.md",
+    "70 Resources/Templates/Journal/00 Evening Log.md",
+    "70 Resources/Templates/Journal/00 Dream.md",
+    "70 Resources/Templates/Glossar/50 Basic Glossar Template.md",
+    "70 Resources/Templates/Area/20 Tasks Template.md",
+    "70 Resources/Templates/Area/20 Mentions Template.md",
+    "70 Resources/Templates/Area/20 Area Charter Template.md",
+    "70 Resources/Templates/Project",
+    "70 Resources/Templates/People Template.md",
+    "70 Resources/Templates/Knowledge",
+    "70 Resources/Templates/Journal",
+    "70 Resources/Templates/Glossar",
+    "70 Resources/Templates/Area",
+    "70 Resources/Templates",
+    "80 Archive",
+    "60 Dictionary",
+    "00 Journal/Entries/2024-05-09 Journal.md"
   ]
 }
