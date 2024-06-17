@@ -8,7 +8,7 @@ const activeNote = app.workspace.activeLeaf.view.file;
 const content = await this.app.vault.read(activeNote);
 const lines = content.split('\n');
 
-const buttonLastLine = '    file: Scripts/addTask.js'
+const buttonLastLine = '    file: 70 Resources/Scripts/addTask.js'
 let lineIndex = -1;
 
 for (let i = 0; i < lines.length; i++) {

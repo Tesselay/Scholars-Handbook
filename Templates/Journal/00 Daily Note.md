@@ -52,7 +52,7 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 > > style: primary
 > > actions:
 > >   - type: js
-> >     file: Scripts/addDream.js
+> >     file: 70 Resources/Scripts/addDream.js
 > > ```
 >
 > > [!blank]
@@ -69,7 +69,7 @@ hidden: false
 style: default
 actions:
   - type: js
-    file: Scripts/addTask.js
+    file: 70 Resources/Scripts/addTask.js
 ```
 
 
@@ -87,7 +87,7 @@ label: Create New Entry
 style: primary
 actions:
   - type: js
-    file: Scripts/addLog.js
+    file: 70 Resources/Scripts/addLog.js
 ```
 
 ```js-engine

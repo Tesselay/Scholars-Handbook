@@ -71,7 +71,7 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 > > const firstWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>';
 > > const lastWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>';
 > > 
-> > const chartRenderer = await engine.importJs('Scripts/renderDailyDataChart.js');
+> > const chartRenderer = await engine.importJs('70 Resources/Scripts/renderDailyDataChart.js');
 > > return chartRenderer.renderChart(firstWeekDay, lastWeekDay, container);             
 > > ```   
 >
@@ -80,7 +80,7 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 > > const firstWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 0, tp.file.title, "YYYY-[W]ww") %>';
 > > const lastWeekDay = '<% tp.date.weekday("YYYY-MM-DD", 6, tp.file.title, "YYYY-[W]ww") %>';
 > > 
-> > const chartRenderer = await engine.importJs('Scripts/renderHabitChart.js');
+> > const chartRenderer = await engine.importJs('70 Resources/Scripts/renderHabitChart.js');
 > > return chartRenderer.renderChart(firstWeekDay, lastWeekDay, container);         
 > > ```
 

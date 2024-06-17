@@ -32,7 +32,7 @@ hidden: false
 style: default
 actions:
   - type: js
-    file: Scripts/addTask.js
+    file: 70 Resources/Scripts/addTask.js
 ```
 
 

@@ -105,7 +105,7 @@ filter: "#Inbox"
 > > style: default
 > > actions:
 > >   - type: js
-> >     file: Scripts/projectCreation.js
+> >     file: 70 Resources/Scripts/projectCreation.js
 > > ```
 >
 > > [!datalog] ### Areas
@@ -130,7 +130,7 @@ filter: "#Inbox"
 > > style: default
 > > actions:
 > >   - type: js
-> >     file: Scripts/areaCreation.js
+> >     file: 70 Resources/Scripts/areaCreation.js
 > > ```
 
 <br>
