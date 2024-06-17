@@ -1,5 +1,5 @@
 {
-  "attachmentFolderPath": "Assets",
+  "attachmentFolderPath": "70 Resources/Images",
   "livePreview": true,
   "showInlineTitle": false,
   "alwaysUpdateLinks": true,
@@ -8,5 +8,7 @@
   "showLineNumber": true,
   "promptDelete": false,
   "propertiesInDocument": "hidden",
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "90 Sandbox"
 }
