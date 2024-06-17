@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "FasBoxOpen",
-      "FasBoxArchive",
-      "FasLanguage",
+      "FasAtom",
       "FasBookmark",
-      "FasPerson"
+      "FasPerson",
+      "FasLightbulb",
+      "FasObjectGroup"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
