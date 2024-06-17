@@ -1,13 +1,13 @@
 .trash/*
 .obsidian/Second Brain.code-workspace
 .obsidian/snippets/sandbox.css
-Templates/Template Sandbox.md
+70 Resources/Templates/Template Sandbox.md
 .obsidian/plugins/**/main.js
 .obsidian/plugins/**/manifest.json
 .obsidian/plugins/**/styles.css
 .obsidian/plugins/**/cache.json
 .obsidian/plugins/**/histories.json
-Scripts/test.js
+70 Resources/Scripts/test.js
 /.obsidian/themes
 .obsidian/workspace.json
 .obsidian/plugins/recent-files-obsidian/data.json
