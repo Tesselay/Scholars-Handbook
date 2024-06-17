@@ -122,6 +122,7 @@ return markdownBuilder
 > > list
 > > where file.cday = date(this.file.name)
 > > sort file.ctime desc
+> > limit 25
 > > ```
 >
 > > [!datalog] #### Files updated today
@@ -129,4 +130,5 @@ return markdownBuilder
 > > list
 > > where file.mday = date(this.file.name)
 > > sort file.ctime desc
+> > limit 25
 > > ```
