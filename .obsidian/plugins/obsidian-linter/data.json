@@ -267,7 +267,7 @@
   "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [
-    "Templates"
+    "70 Resources/Templates"
   ],
   "linterLocale": "system-default",
   "logLevel": "WARN",
