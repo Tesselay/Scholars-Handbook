@@ -1,1 +1,0 @@
-log-learned-today:: #knowledge #topic | 
