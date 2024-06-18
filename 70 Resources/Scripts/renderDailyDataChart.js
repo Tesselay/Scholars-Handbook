@@ -1,26 +1,40 @@
-function getPagesOfWeek(firstWeekDay, lastWeekDay, path) {
-	const dv = app.plugins.getPlugin('dataview').api;
+const dv = app.plugins.getPlugin('dataview').api;
 
+function getPagesOfWeek(firstWeekDay, lastWeekDay, path) {
 	return dv.pages(path)
 		  .where(p => p.file.frontmatter.date >= firstWeekDay && p.file.frontmatter.date <= lastWeekDay)
 		  .sort((a) => a.file.frontmatter.date);
 }
 
-function generateChartData(firstWeekDay, lastWeekDay) {
+function getPageDates(firstWeekDay) {
+	const refDay = new Date(firstWeekDay)
+	const firstDay = dv.date(new Date(firstWeekDay).toISOString().split('T')[0])
+	const secondDay = dv.date(new Date(refDay.setDate(refDay.getDate() + 1)).toISOString().split('T')[0])
+	const thirdDay = dv.date(new Date(refDay.setDate(refDay.getDate() + 1)).toISOString().split('T')[0])
+	const fourthDay = dv.date(new Date(refDay.setDate(refDay.getDate() + 1)).toISOString().split('T')[0])
+	const fifthDay = dv.date(new Date(refDay.setDate(refDay.getDate() + 1)).toISOString().split('T')[0])
+	const sixthDay = dv.date(new Date(refDay.setDate(refDay.getDate() + 1)).toISOString().split('T')[0])
+	const seventhDay = dv.date(new Date(refDay.setDate(refDay.getDate() + 1)).toISOString().split('T')[0])
 
-	const dailyPages = getPagesOfWeek(firstWeekDay, lastWeekDay, '"00 Journal/Periodic/Daily"');
+	return dv.array([{'date': firstDay}, {'date': secondDay}, {'date': thirdDay}, {'date': fourthDay}, {'date': fifthDay}, {'date': sixthDay}, {'date': seventhDay}])
+}
+
+function generateChartData(firstWeekDay, lastWeekDay) {
 	const morningPages = getPagesOfWeek(firstWeekDay, lastWeekDay, '"00 Journal/Entries/Morning"');
 	const eveningPages = getPagesOfWeek(firstWeekDay, lastWeekDay, '"00 Journal/Entries/Evening"');
-	const dreamPages = getPagesOfWeek(firstWeekDay, lastWeekDay, '"00 Journal/Entries/Dreams"');
+	let dreamPages = getPagesOfWeek(firstWeekDay, lastWeekDay, '"00 Journal/Entries/Dreams"');
 
-	const pageDates = dailyPages.map(p => p.file.frontmatter.date).values;
+	let pageDates = getPageDates(firstWeekDay)
 	const pageSleepRatings = morningPages.map(p => p['sleep-rating']).values;
 	const pageDayRatings = eveningPages.map(p => p['day-rating']).values;
-	
+
+	dreamPages = dreamPages.concat(pageDates)
 	const pageNightmares = dreamPages.groupBy(p => p['date'])
 	  .map(p => p.rows.filter(e => e['nightmare'] === true))
 	  .map(p => p.length)
 	  .array();
+
+	pageDates = pageDates.map(p => p.date.toISODate())
 
 	const chartData = {
 		data: {
