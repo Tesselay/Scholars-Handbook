@@ -28,3 +28,5 @@ cssclasses:
 ## <% tp.file.title.split(' - ')[1] %>
 
 #dream
+
+#### Nightmare `INPUT[toggle(title(Nightmare)):nightmare]`
