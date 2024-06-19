@@ -41,7 +41,7 @@ INPUT[list(placeholder(Today I achieved...)):achievements]
 #### Habits
 ```tasks
 tag includes #habit  
-((due before|on <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>) AND (not done)) OR (done on <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>)
+(((due before <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>) OR (due on <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>)) AND (not done)) OR (done on <% tp.date.now("YYYY-MM-DD", 0, tp.file.title, "YYYY-MM-DD") %>)
 hide backlink
 ```
 
