@@ -14,7 +14,7 @@ const activeNote = app.workspace.activeLeaf.view.file;
 	const lines = content.split('\n');
 
 	const buttonFirstLine = 'label: Add Dream'
-	const dreamEmbed = `> > ![[00 Journal/Entries/Dreams/${dreamFileName}|${dreamFileName}]]\n> >`;
+	const dreamEmbed = `> > [[00 Journal/Entries/Dreams/${dreamFileName}|${dreamFileName}]]\n> > ![[00 Journal/Entries/Dreams/${dreamFileName}|${dreamFileName}]]\n> >`;
 	let lineIndex = -1;
 
 	for (let i = 0; i < lines.length; i++) {
