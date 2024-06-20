@@ -13,6 +13,7 @@
     "sleep-rating": "number",
     "song-of-the-day": "text",
     "gratitudes": "multitext",
-    "nightmare": "checkbox"
+    "nightmare": "checkbox",
+    "domain": "multitext"
   }
 }

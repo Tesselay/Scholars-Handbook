@@ -1,6 +1,6 @@
 {
   "attachmentFolderPath": "70 Resources/Images",
-  "livePreview": true,
+  "livePreview": false,
   "showInlineTitle": false,
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
