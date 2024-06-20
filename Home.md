@@ -2,13 +2,13 @@
 title: Home
 parent: 
 date-created: 2023-11-22T22:51:53+01:00
-date-modified: 2024-05-13T19:56:35+02:00
+date-modified: 2024-06-17T18:33:28+02:00
 cssclasses:
   - line2
 ---
 
 > [!multi-column|center-fixed]
-> <h1 style="font-size: 4rem">Welcome back, Dominique</h1>
+> <h1 style="font-size: 4rem">Welcome back!</h1>
 
 ```widgets
 type: clock
