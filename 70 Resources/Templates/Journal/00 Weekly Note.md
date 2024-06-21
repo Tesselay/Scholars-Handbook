@@ -1,7 +1,7 @@
 ---
 parent: <% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[W]ww") %>
 title: 
-date: <% tp.date.weekday("YYYY-MM-DD",  0, tp.file.title, "YYYY-[W]ww") %>
+week: <% tp.date.weekday("YYYY-[W]ww",  0, tp.file.title, "YYYY-[W]ww") %>
 cssclasses:
   - line3
   - clean-embed
