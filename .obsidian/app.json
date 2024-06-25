@@ -1,13 +1,13 @@
 {
-  "attachmentFolderPath": "70 Resources/Images",
-  "livePreview": false,
+  "attachmentFolderPath": "70 Resources/Assets",
+  "livePreview": true,
   "showInlineTitle": false,
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "defaultViewMode": "preview",
   "showLineNumber": true,
   "promptDelete": false,
-  "propertiesInDocument": "hidden",
+  "propertiesInDocument": "source",
   "newLinkFormat": "absolute",
   "newFileLocation": "folder",
   "newFileFolderPath": "90 Sandbox"
