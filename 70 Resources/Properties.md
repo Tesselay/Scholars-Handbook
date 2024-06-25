@@ -1,7 +1,7 @@
 ---
 title: Properties
 date-created: 2024-06-21T16:50:01+02:00
-date-modified: 2024-06-25T16:53:15+02:00
+date-modified: 2024-06-25T16:57:51+02:00
 cssclasses:
   - line1
 parent:
@@ -55,7 +55,10 @@ This includes some information on all properties regularly used, including their
 |               | Dream     |                                        |
 | **Knowledge** |           |                                        |
 | **Glossar**   |           |                                        |
+| **Area**      |           |                                        |
+| **Project**   |           |                                        |
 | **Query**     |           | Only queries content from other notes. |
+| **Overview**  |           |                                        |
 
 ##### Status'
 
