@@ -1,16 +1,17 @@
 ---
-parent: "<%* tR += '[[20 Area/Area Dashboard|Area Dashboard]]' %>"
-title: <% tp.file.folder() %>
+title: 20 Area Charter Template
+date-created: 2024-06-17T14:11:33+02:00
+date-modified: 2024-06-25T17:00:19+02:00
+cssclasses: 
+parent:
+  - <%* tR += '[[20 Area/Area Dashboard|Area Dashboard]]' %>
+type:
+  - area
+  - overview
+tags: []
+sources: 
 area: <% tp.file.folder() %>
-areapage:  obsidian://advanced-uri?vault=Second%20Brain&commandname=Projects:%20Show%20<%* tR += tp.file.folder().replaceAll(' ', '%20') %>
-type: overview
-status: Not Started
-team: []
-sources: []
-tags: 
-cssclasses:
-date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
-date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
+areapage: obsidian://advanced-uri?vault=Second%20Brain&commandname=Projects:%20Show%20<%* tR += tp.file.folder().replaceAll(' ', '%20') %>
 ---
 
 # <% tp.file.folder() %>

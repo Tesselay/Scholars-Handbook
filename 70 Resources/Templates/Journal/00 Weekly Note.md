@@ -1,32 +1,34 @@
 ---
-parent: <% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[W]ww") %>
-title: 
-week: <% tp.date.weekday("YYYY-[W]ww",  0, tp.file.title, "YYYY-[W]ww") %>
+title: 00 Weekly Note
+date-created: 2024-06-17T14:11:33+02:00
+date-modified: 2024-06-25T17:00:17+02:00
 cssclasses:
   - line3
   - clean-embed
-date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
-date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
+week: <% tp.date.weekday("YYYY-[W]ww",  0, tp.file.title, "YYYY-[W]ww") %>
+parent: <% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[W]ww") %>
+type: 
+tags: 
 ---
 
 # <% tp.file.title %>
 
 > [!multi-column]
-> 
+>
 >> [!button]
 >> <% tp.date.now("MMM", 0, tp.file.title, "YYYY-[W]ww") %>
 >> **[[00 Journal/Periodic/Monthly/<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[W]ww") %>|<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[W]ww") %>]]**
 
 > [!multi-column]
-> 
+>
 > > [!button]
 > > Last Week
 > > **[[00 Journal/Periodic/Weekly/<% tp.date.now("YYYY-[W]ww", "P-1W", tp.file.title, "YYYY-[W]ww") %>|<% tp.date.now("YYYY-[W]ww", "P-1W", tp.file.title, "YYYY-[W]ww") %>]]**
-> 
+>
 > > [!button]
 > > <% tp.date.now("MMM", 0, tp.file.title, "YYYY-[W]ww") %>
 > > **[[00 Journal/Periodic/Monthly/<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[W]ww") %>|<% tp.date.now("YYYY-MM", 0, tp.file.title, "YYYY-[W]ww") %>]]**
-> 
+>
 > > [!button]
 > > Next Week
 > > **[[00 Journal/Periodic/Weekly/<% tp.date.now("YYYY-[W]ww", "P1W", tp.file.title, "YYYY-[W]ww") %>|<% tp.date.now("YYYY-[W]ww", "P1W", tp.file.title, "YYYY-[W]ww") %>]]**

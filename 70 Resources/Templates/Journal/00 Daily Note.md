@@ -1,16 +1,17 @@
 ---
-parent: '[[<% tp.date.now("YYYY-[W]ww", 0, tp.file.title, "YYYY-MM-DD") %>|<% tp.date.now("YYYY-[W]ww", 0, tp.file.title, "YYYY-MM-DD") %>]]'
-title: 
-type:
-  - periodic
-  - daily
-date: <% tp.file.title %>
+title: 00 Daily Note
+date-created: 2024-06-17T14:11:33+02:00
+date-modified: 2024-06-25T17:00:02+02:00
 cssclasses:
   - line3
   - clean-embed
   - oc-padding-0
-date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
-date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
+date: <% tp.file.title %>
+parent: '[[<% tp.date.now("YYYY-[W]ww", 0, tp.file.title, "YYYY-MM-DD") %>|<% tp.date.now("YYYY-[W]ww", 0, tp.file.title, "YYYY-MM-DD") %>]]'
+type:
+  - periodic
+  - daily
+tags: 
 ---
 
 > [!multi-column]
@@ -71,7 +72,6 @@ actions:
   - type: js
     file: 70 Resources/Scripts/addTask.js
 ```
-
 
 ```tasks
 tag does not include #habit

@@ -1,17 +1,20 @@
 ---
-parent: "<%* tR += '[[10 Project/Project Dashboard|Project Dashboard]]' %>"
-title: <% tp.file.folder() %>
-project: <% tp.file.folder() %>
-projectpage:  obsidian://advanced-uri?vault=Second%20Brain&commandname=Projects:%20Show%20<%* tR += tp.file.folder().replaceAll(' ', '%20') %>
-type: overview
-status: Not Started
-team: []
-sources: []
-tags: 
+title: 10 Project Charter Template
+date-created: 2024-06-17T14:11:33+02:00
+date-modified: 2024-06-25T17:00:25+02:00
 cssclasses:
   - line2
-date-created: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
-date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
+parent:
+  - <%* tR += '[[10 Project/Project Dashboard|Project Dashboard]]' %>
+type:
+  - project
+  - overview
+tags: 
+sources: 
+project: <% tp.file.folder() %>
+projectpage: obsidian://advanced-uri?vault=Second%20Brain&commandname=Projects:%20Show%20<%* tR += tp.file.folder().replaceAll(' ', '%20') %>
+team: 
+status: Not Started
 ---
 
 # <% tp.file.folder() %>
@@ -28,7 +31,7 @@ date-modified: <% tp.date.now("YYYY-MM-DD[T]HH:MM:SSZ") %>
 > > ```meta-bind
 > > INPUT[list():team]
 > > ``` 
-> 
+>
 > > [!blank]
 > > #### Sources
 > > ```meta-bind
