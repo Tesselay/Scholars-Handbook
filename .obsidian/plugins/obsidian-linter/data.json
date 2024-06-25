@@ -25,7 +25,7 @@
     },
     "insert-yaml-attributes": {
       "enabled": true,
-      "text-to-insert": "parent:\ntitle:"
+      "text-to-insert": "parent:\ntitle:\ncssclasses:\ntype:\ntags:\ndate-created:\ndate-modified:"
     },
     "move-tags-to-yaml": {
       "enabled": true,
@@ -38,9 +38,9 @@
     },
     "yaml-key-sort": {
       "enabled": true,
-      "yaml-key-priority-sort-order": "title:\ntype:\ndomain:\ndate:\nproject:\nprojectpage:\narea:\nareapage:\nstatus:\nteam:\ntags:\nsources:\nparent:\nsame:\nchildren:\ndate-created:\ndate-modified:\ncssclasses:",
+      "yaml-key-priority-sort-order": "title:\ndate-created:\ndate-modified:\ncssclasses:\ndate:\nweek:\nparent:\ntype:\ndomain:\ntags:\nsources:\narea:\nareapage:\nproject:\nprojectpage:\nteam:\nstatus:\ntakeaway:\nsleep-rating:\nnightmare:\ngratitudes:\nachievements:\nday-rating:",
       "priority-keys-at-start-of-yaml": true,
-      "yaml-sort-order-for-other-keys": "None"
+      "yaml-sort-order-for-other-keys": "Ascending Alphabetical"
     },
     "yaml-timestamp": {
       "enabled": true,
