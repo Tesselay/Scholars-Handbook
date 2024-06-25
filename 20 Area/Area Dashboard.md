@@ -1,8 +1,11 @@
 ---
-parent: "[[Home]]"
 title: Area Dashboard
 date-created: 2024-02-13T11:42:23+01:00
-date-modified: 2024-02-19T10:56:25+01:00
+date-modified: 2024-06-25T16:53:00+02:00
+cssclasses: 
+parent: "[[Home]]"
+type: 
+tags: 
 ---
 
 ```dataviewjs 

@@ -1,8 +1,11 @@
 ---
-parent: "[[Home]]"
 title: Knowledge Dashboard
 date-created: 2024-02-19T11:29:15+01:00
-date-modified: 2024-02-19T11:30:12+01:00
+date-modified: 2024-06-25T16:53:04+02:00
+cssclasses: 
+parent: "[[Home]]"
+type: 
+tags: 
 ---
 
 ```dataviewjs 

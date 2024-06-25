@@ -1,8 +1,11 @@
 ---
 title: Plugins
-parent: 
 date-created: 2024-06-15T18:22:20+02:00
-date-modified: 2024-06-21T19:20:38+02:00
+date-modified: 2024-06-25T16:53:15+02:00
+cssclasses: 
+parent: 
+type: 
+tags: []
 ---
 
 # Plugin & Theme Info

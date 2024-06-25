@@ -1,8 +1,11 @@
 ---
-parent: "[[Home]]"
 title: Project Dashboard
 date-created: 2024-02-07T11:28:31+01:00
-date-modified: 2024-02-19T10:56:33+01:00
+date-modified: 2024-06-25T16:52:57+02:00
+cssclasses: 
+parent: "[[Home]]"
+type: 
+tags: 
 ---
 
 ```dataviewjs 

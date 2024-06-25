@@ -1,10 +1,12 @@
 ---
 title: Home
-parent: 
 date-created: 2023-11-22T22:51:53+01:00
-date-modified: 2024-06-17T18:33:28+02:00
+date-modified: 2024-06-25T16:40:01+02:00
 cssclasses:
   - line2
+parent: 
+type: 
+tags: 
 ---
 
 > [!multi-column|center-fixed]

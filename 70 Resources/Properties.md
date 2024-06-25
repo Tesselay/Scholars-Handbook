@@ -1,12 +1,13 @@
 ---
 title: Properties
 date-created: 2024-06-21T16:50:01+02:00
-date-modified: 2024-06-25T16:39:59+02:00
+date-modified: 2024-06-25T16:53:15+02:00
 cssclasses:
   - line1
-parent: [[Home]]
+parent:
+  - "[[Home]]"
 type: 
-tags: 
+tags: []
 ---
 
 # Properties Info
