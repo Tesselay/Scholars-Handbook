@@ -2,8 +2,10 @@
 title: Plugins
 parent: 
 date-created: 2024-06-15T18:22:20+02:00
-date-modified: 2024-06-17T19:15:03+02:00
+date-modified: 2024-06-21T19:20:38+02:00
 ---
+
+# Plugin & Theme Info
 
 > [!info]
 > Settings for all plugins mentioned are already provided but the plugins itself still need to be downloaded.
