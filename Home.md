@@ -1,28 +1,12 @@
 ---
 title: Home
 date-created: 2023-11-22T22:51:53+01:00
-date-modified: 2024-06-25T16:40:01+02:00
-cssclasses:
-  - line2
+date-modified: 2024-11-19T21:44:15+01:00
+cssclasses: []
 parent: 
 type: 
-tags: 
+tags:
 ---
-
-> [!multi-column|center-fixed]
-> <h1 style="font-size: 4rem">Welcome back!</h1>
-
-```widgets
-type: clock
-```
-
-```widgets
-type: quote
-quote: Lorem ipsum dolor sit amet
-author: Lorem Ipsum
-```
-
-<br>
 
 > [!multi-column]
 >
@@ -69,90 +53,56 @@ author: Lorem Ipsum
 
 ---
 
-```custom-frames
-frame: Proton Calendar
-style: height: 80vh; width: 100%;
+````tabs
+tab: Recent Files
+ ```dataview
+ table dateformat(file.mtime, "dd MMM yyyy, T") as "Last Modified" 
+ from ""
+ sort file.mtime desc
+ limit 15
 ```
 
----
-
-```todoist
-name: Inbox
-filter: "#Inbox"
+tab: New Knowledge
+```dataview
+ table dateformat(file.mtime, "dd MMM yyyy, T") as "Last Modified"
+where type = "knowledge"
+sort file.ctime desc
+limit 15
 ```
 
----
+tab: Projects
+[[10 Project/Project Dashboard|Project Dashboard]]
+```dataviewjs
+let projectLinks = [];
+for (let project of dv.pages('"10 Project"').where(p => p.file.name.includes("Charter"))) {
+projectLinks.push(dv.fileLink(project.file.path, false, project.project));
+}
+dv.table([], projectLinks.map(p => [p]))
+```
+```meta-bind-button
+label: Create Project
+hidden: false
+style: default
+actions:
+  - type: js
+    file: 70 Resources/Scripts/projectCreation.js
+```
 
-> [!multi-column]
->
-> > [!datalog] ### Projects
-> >
-> > #### [[10 Project/Project Dashboard|Project Dashboard]]
-> >
-> > ```dataviewjs
-> > let projectLinks = [];
-> > for (let project of dv.pages('"10 Project"').where(p => p.file.name.includes("Charter"))) {
-> > projectLinks.push(dv.fileLink(project.file.path, false, project.project));
-> > }
-> > dv.table([], projectLinks.map(p => [p]))
-> > ```
-> >
-> > ```meta-bind-button
-> > label: Create Project
-> > icon: ""
-> > hidden: false
-> > class: ""
-> > tooltip: ""
-> > id: ""
-> > style: default
-> > actions:
-> >   - type: js
-> >     file: 70 Resources/Scripts/projectCreation.js
-> > ```
->
-> > [!datalog] ### Areas
-> >
-> > #### [[20 Area/Area Dashboard|Area Dashboard]]
-> >
-> > ```dataviewjs
-> > let areaLinks = [];
-> > for (let area of dv.pages('"20 Area"').where(p => p.file.name.includes("Charter"))) {
-> > areaLinks.push(dv.fileLink(area.file.path, false, area.area));
-> > }
-> > dv.table([], areaLinks.map(p => [p]))
-> > ```
-> >
-> > ```meta-bind-button
-> > label: Create Area
-> > icon: ""
-> > hidden: false
-> > class: ""
-> > tooltip: ""
-> > id: ""
-> > style: default
-> > actions:
-> >   - type: js
-> >     file: 70 Resources/Scripts/areaCreation.js
-> > ```
-
-<br>
-
-> [!multi-column]
->
-> > [!datalog] ### Recent Knowledge
-> >
-> > ```dataview
-> > list 
-> > where type = "knowledge"
-> > sort file.ctime desc
-> > limit 15
-> > ```
->
-> > [!datalog] ### Recently Changed Files
-> >
-> > ```dataview
-> > list 
-> > from ""
-> > sort file.mtime desc
-> > limit 15
-> > ```
+tab: Areas
+[[20 Area/Area Dashboard|Area Dashboard]]
+```dataviewjs
+let areaLinks = [];
+for (let area of dv.pages('"20 Area"').where(p => p.file.name.includes("Charter"))) {
+areaLinks.push(dv.fileLink(area.file.path, false, area.area));
+}
+dv.table([], areaLinks.map(p => [p]))
+```
+```meta-bind-button
+label: Create Area
+hidden: false
+style: default
+actions:
+  - type: js
+    file: 70 Resources/Scripts/areaCreation.js
+```
+````
