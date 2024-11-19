@@ -1,6 +1,5 @@
 [
   "obsidian-icon-folder",
-  "breadcrumbs",
   "calendar",
   "callout-manager",
   "colored-tags",
@@ -16,13 +15,13 @@
   "templater-obsidian",
   "various-complements",
   "widgets",
-  "obsidian-git",
   "obsidian-charts",
   "obsidian-meta-bind-plugin",
   "quickadd",
   "obsidian-advanced-uri",
   "js-engine",
-  "obsidian-omnivore",
   "obsidian-linter",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "dbfolder",
+  "obsidian-excalidraw-plugin"
 ]
